@@ -1,0 +1,17 @@
+
+\begin{table}[H]
+\centering
+\caption{Coverage of retained provenance fields. Every provider-linked row contains a server date and a hashed provider call or request identifier.}
+\label{tab:provider}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Stratum & Rows & Provider-linked & Request hash & Response hash & Prompt hash & Result hash \\
+\midrule
+DeepSeek clean & 960 & 803 & 803 & 803 & 960 & 960 \\
+DeepSeek extension & 960 & 819 & 819 & 819 & 960 & 960 \\
+GLM boundary & 480 & 383 & 414 & 383 & 480 & 480 \\
+\bottomrule
+\end{tabular}
+\end{table}

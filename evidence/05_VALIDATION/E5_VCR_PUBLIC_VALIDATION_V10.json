@@ -1,0 +1,81 @@
+{
+  "corroboration_files": [
+    {
+      "file": "docker_provenance/DOCKER_IMAGE_PROVENANCE_10TASK_20260706.md",
+      "file_sha256": "530aa2e2df4611a2782fb33be1a68460fcc726c3815ff262a57db7371a5c29fd"
+    },
+    {
+      "file": "docker_provenance/DOCKER_IMAGE_PROVENANCE_NEW10_20260706.md",
+      "file_sha256": "dc9d20da30ab163d207afe47b4059ba87f220d46b3d33a44aeb0a5fb5af43e09"
+    },
+    {
+      "file": "docker_provenance/DOCKER_IMAGE_PROVENANCE_NEXT10_20260706.md",
+      "file_sha256": "e4b5855f64d6ee980fe5837566d1fe8132c4fcc86a4322db344ec84fd6c5996f"
+    },
+    {
+      "file": "docker_provenance/DOCKER_OFFICIAL_MIRROR_DIGEST_COMPARISON_NEW10_20260706.md",
+      "file_sha256": "d411f3a130949b0a92243574f16fbe6957fb15a4a70ba757cc08e8c24e7c7e26"
+    },
+    {
+      "file": "docker_provenance/ROADMAPBENCH_RANDOM30_EXTENSION_DOCKER_PROVENANCE_20260710.jsonl",
+      "file_sha256": "8f930aac5b1ef10531f2c711dee935ca4fe2aff26d00b7132e6067782725f9b5"
+    },
+    {
+      "file": "docker_provenance/ROADMAPBENCH_RANDOM30_EXTENSION_PULL_LEDGER_20260710.jsonl",
+      "file_sha256": "704e2a605f14363d5ee97dd08e64a27bd5d1b6300750a620797548063d168c3f"
+    },
+    {
+      "file": "docker_provenance/ROADMAPBENCH_RANDOM30_EXTENSION_PULL_LEDGER_ABORTED_PRE_RETRY_TUNING_20260710.jsonl",
+      "file_sha256": "66617a17b01fd90a7dcc3aca59c25417dacfd96f3436f5cf012e0ef61d038b91"
+    }
+  ],
+  "evidence_rows": 2400,
+  "files": [
+    {
+      "file": "E5_VCR_GLM52_BAILIAN_30TASK_8REP_480ROW_POSTRUN_20260709_REPLAY_INDEX.jsonl",
+      "file_sha256": "5ac20f3b37544bd215a03d011b0fe26268a443d2acbff3a2971bd4813ca98688",
+      "record_type": "replay_index",
+      "rows": 480,
+      "self_hashes_valid": true
+    },
+    {
+      "file": "E5_VCR_GLM52_BAILIAN_30TASK_8REP_480ROW_POSTRUN_20260709_ROW_LEDGER.jsonl",
+      "file_sha256": "ffd8272a38b2c9c284cc5ce4dcbc793d2df9462d3fb97c0aac1ffce71f8c4809",
+      "record_type": "row_ledger",
+      "rows": 480,
+      "self_hashes_valid": true
+    },
+    {
+      "file": "E5_VCR_MAINMATRIX_V2_30TASK_8REP_TOKEN32768_8192_POSTRUN_20260707_REPLAY_INDEX.jsonl",
+      "file_sha256": "511c6eae2ee83de58b145723d0b69f123515254ca59e0616a7d7679416d5e18d",
+      "record_type": "replay_index",
+      "rows": 960,
+      "self_hashes_valid": true
+    },
+    {
+      "file": "E5_VCR_MAINMATRIX_V2_30TASK_8REP_TOKEN32768_8192_POSTRUN_20260707_ROW_LEDGER.jsonl",
+      "file_sha256": "f37742ae8289a4addcfd469e9b74a034c8ac0889a600ecb4ace3ba7c911592b7",
+      "record_type": "row_ledger",
+      "rows": 960,
+      "self_hashes_valid": true
+    },
+    {
+      "file": "E5_VCR_RANDOM30_EXTENSION_DEEPSEEK_30TASK_8REP_960ROW_POSTRUN_20260710_REPLAY_INDEX.jsonl",
+      "file_sha256": "6c00593730d0e8e7f970d71ca19e47ad21606487541a3a0b1fb48be36c31d944",
+      "record_type": "replay_index",
+      "rows": 960,
+      "self_hashes_valid": true
+    },
+    {
+      "file": "E5_VCR_RANDOM30_EXTENSION_DEEPSEEK_30TASK_8REP_960ROW_POSTRUN_20260710_ROW_LEDGER.jsonl",
+      "file_sha256": "112ec3943b42689b25b2234a53090fa6dc4ec6c50fcb79715432305fec5cc460",
+      "record_type": "row_ledger",
+      "rows": 960,
+      "self_hashes_valid": true
+    }
+  ],
+  "prior_or_internal_derivative_fields_included": false,
+  "replay_rows": 2400,
+  "schema_version": 1,
+  "scientific_fields_preserved": true
+}

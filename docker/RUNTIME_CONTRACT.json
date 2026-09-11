@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "historical RoadmapBench verifier execution used by the released evidence",
+  "container_engine": "Docker-compatible OCI runtime",
+  "historical_platform": "linux/amd64",
+  "docker_image_layers_included": false,
+  "image_identity_surface": {
+    "mutable_reference_pattern": "znpt/roadmapbench-<task-id>:latest",
+    "required_frozen_identity": "manifest digest from IMAGE_ROSTER.jsonl",
+    "local_image_id_role": "historical post-load identity; not interchangeable with the registry manifest digest",
+    "mirror_acceptance_rule": "a mirror was accepted only when its manifest digest matched the official registry digest"
+  },
+  "candidate_execution": {
+    "container_remove_after_exit": true,
+    "platform": "linux/amd64",
+    "working_directory": "/app",
+    "tests_mount": "/tests:ro",
+    "candidate_patch_mount": "/patch.diff:ro",
+    "verifier_output_mount": "/logs/verifier",
+    "precheck": "git apply --check /patch.diff",
+    "primary_apply": "git apply /patch.diff",
+    "historical_fallback_apply": "patch -p1 < /patch.diff",
+    "verifier_command": "bash /tests/test.sh",
+    "task_timeout_source": "timeout_sec from the task metadata, otherwise 1800 seconds",
+    "host_timeout_margin_seconds": 60,
+    "pass_rule": "reward.txt parses as a number greater than or equal to 0.9999"
+  },
+  "strict_edit_transport_before_container": {
+    "format": "edit_json converted deterministically to a candidate patch",
+    "fuzzy_matching": false,
+    "approximate_matching": false,
+    "silent_failed_operation_skip": false,
+    "empty_old_anchor_allowed": false,
+    "path_auto_repair": "leading ./ normalization only",
+    "no_op_counts_as_success": false,
+    "failed_operation_enters_docker": false
+  },
+  "offline_public_replay": {
+    "network_required_for_offline_replay": false,
+    "docker_required_for_offline_replay": false,
+    "model_api_required_for_offline_replay": false,
+    "purpose": "recompute released statistics and verify H5/E5/VCR links from saved evidence"
+  },
+  "fresh_container_rerun_boundary": {
+    "network_required": true,
+    "docker_required": true,
+    "benchmark_support_files_required": true,
+    "hosted_model_regeneration_required": false,
+    "status_in_public_package": "documented but not bundled because image layers and protected verifier materials are excluded"
+  }
+}

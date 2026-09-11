@@ -1,0 +1,71 @@
+\section{A Claim-Indexed Model of Repair Evidence}
+\label{sec:framework}
+
+A repository-repair evaluation observes a chain of proxies. The chain in this study is
+\begin{equation}
+\widetilde A_i
+\xrightarrow{\;\mathcal H\;}
+A_i
+\longrightarrow
+P_i
+\dashrightarrow
+Y_i,
+\label{eq:evidence-chain}
+\end{equation}
+where $\widetilde A_i$ is the historical action field, $\mathcal H$ is the documented harmonization rule, $A_i$ is the governed-action construct, $P_i$ is the frozen verifier-pass indicator, and $Y_i$ denotes semantic adequacy. The solid arrows connect observed or derived variables. The dashed arrow marks an interpretive step that the study does not observe directly.
+
+\subsection{Three measurement boundaries}
+
+\paragraph{Field to construct.}
+A field name such as \code{action\_governance\_success} expresses an intended meaning. Its scientific meaning comes from the rule that generated it and the invariants that support the rule. Runner changes, export mappings, missing artifacts, and event-order differences can break the link between a stored value and its intended construct. An encoding audit checks that link. The output is a versioned construct $A_i$ that coexists with the immutable raw field $\widetilde A_i$.
+
+\paragraph{Construct to criterion.}
+An upstream construct can be valid and still carry little information about a stronger endpoint. The criterion relation asks how often $A_i=1$ coincides with $P_i=1$, whether $P_i=1$ appears outside the expected upstream state, and how the relation varies across the declared instrumentation strata. In this paper, governed action is a pipeline construct and verifier pass is the criterion against which its endpoint yield is measured.
+
+\paragraph{Criterion to semantic adequacy.}
+A verifier pass establishes that a finite executable criterion was met. Semantic adequacy includes the intended behavior, relevant untested inputs, and the absence of unacceptable regressions. Endpoint controls can test selected regions of this gap. They cannot observe the entire semantic construct. Keeping $P_i$ and $Y_i$ separate prevents a local test result from absorbing a broader meaning than the test surface provides.
+
+\subsection{The claim index}
+
+A scalar estimate suppresses the choices that produced it. Software-measurement theory cautions that the same label can denote different concepts unless the measured property and admissible interpretation are explicit \citep{briand1996measurement}. We make those choices part of the reported object. For estimate $\widehat\theta$,
+\begin{equation}
+\claimindex(\widehat\theta)
+=
+\langle C,K,U,V,\Pi\rangle.
+\label{eq:claim-index}
+\end{equation}
+\Cref{tab:claim-index} defines the coordinates. For two estimates, let
+\begin{equation}
+\mathcal M(\widehat\theta_a,\widehat\theta_b)
+=
+\{q\in\{C,K,U,V,\Pi\}:q(\widehat\theta_a)\neq q(\widehat\theta_b)\}
+\label{eq:mismatch-set}
+\end{equation}
+be their mismatch set. The set records which parts of the measurement question change. A direct contrast intended to isolate coordinate $q^*$ requires $\mathcal M(\widehat\theta_a,\widehat\theta_b)\subseteq\{q^*\}$; a design may instead model additional mismatches explicitly. Descriptive multi-coordinate contrasts remain useful when their composite meaning is stated. For example, governed-action and verifier-pass discovery at $k=8$ share the opportunity design, support unit, and instrumentation stratum; the construct and its interpretation boundary change together. Comparing action discovery at $k=8$ with pass prevalence per execution also changes opportunity and unit, so the numerical gap combines additional questions.
+
+\input{tables/table_claim_index}
+
+The index applies across metrics and supplies a compact specification for each one. A leaderboard score, a diagnostic action rate, and a task-level reliability measure can each be useful once their coordinates are stated.
+
+\subsection{Opportunity and support as orthogonal dimensions}
+
+Opportunity and support change an estimate in different ways. Increasing $K$ gives a fixed cell more chances to expose a positive event. It answers a discovery question: what fraction of cells would contain at least one positive observation under a specified subset of the retained attempts? It does not add new task contexts.
+
+Changing $U$ asks how broadly the observed positives are distributed. Ten positive rows in one cell provide ten execution observations, one positive cell, one positive task, and one positive task family. These counts describe the same corpus at progressively broader units. We summarize them with a support profile
+\begin{equation}
+\supportprofile_s(M)=\langle R_s(M),C_s(M),T_s(M),F_s(M)\rangle,
+\label{eq:support-profile}
+\end{equation}
+where $M$ is a binary signal and the four entries count positive rows, cells, tasks, and task families in stratum $s$.
+
+The two dimensions often move in opposite directions. More opportunities can make a positive event easier to observe within a cell. Broader support units can reveal that those positives occupy only a small part of the task surface. Reporting both prevents repeated observations from being mistaken for broad evidence.
+
+\subsection{Research questions}
+
+The framework yields four research questions:
+\begin{enumerate}[label=\textbf{RQ\arabic*:},leftmargin=*,itemsep=0.35em]
+    \item \textbf{Field integrity.} Does the retained raw action field satisfy the application invariants of the governed-action construct?
+    \item \textbf{Criterion relation.} How does harmonized governed action relate to verifier pass at the execution level?
+    \item \textbf{Opportunity and support.} How do governed action and verifier pass accumulate under one to eight retained opportunities, and how broadly are their positives supported across cells, tasks, and task families?
+    \item \textbf{Endpoint boundary.} How does the frozen verifier behave on known-good, unrepaired, and near-reference negative controls?
+\end{enumerate}

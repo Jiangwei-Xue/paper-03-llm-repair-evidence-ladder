@@ -1,0 +1,44 @@
+schema_version: roadmapbench_random30_extension_freeze_v2_20260710
+status: frozen_before_claim_bearing_execution
+created_utc: 2026-07-10T06:26:30Z
+amends:
+  - Artifact_Chain/ROADMAPBENCH_RANDOM30_EXTENSION_FREEZE_SPEC_20260710.yaml
+  - Artifact_Chain/ROADMAPBENCH_RANDOM30_EXTENSION_EXECUTION_CONCURRENCY_ADDENDUM_20260710.md
+protocol:
+  base: Artifact_Chain/ROADMAPBENCH_RANDOM30_EXTENSION_PROTOCOL_20260710.md
+  task_pool_and_admission: unchanged_from_v1
+  execution_scheduling_only: true
+dataset:
+  task_root: roadmap_swe_evo_probe/data/roadmapbench_random30_extension_seeded_20260710
+  task_count: 30
+future_deepseek_run_surface:
+  models:
+    - deepseek-v4-pro
+    - deepseek-v4-flash
+  arms:
+    - single_shot_v3
+    - staged_v4
+  prompt_variant: loop_only
+  reps: 8
+  planned_rows: 960
+  max_tokens: 32768
+  stage1_max_tokens: 8192
+  provider: deepseek
+  route: direct_provider_api
+  max_workers: 10
+  row_internal_parallelism: false
+  scheduling_order_is_treatment_variable: false
+artifact_requirements:
+  utc_timestamps: true
+  row_level_hashes: true
+  e5_vcr_row_ledger: true
+  e5_vcr_replay_index: true
+  full_transcript_prompt_visibility_audit: true
+  exact_request_and_response_metadata: true
+freeze_rule:
+  no_task_substitution_after_first_api_call: true
+  no_protocol_change_without_new_addendum: true
+boundary:
+  api_execution_performed_when_created: false
+  official_swe_bench_claim: false
+  official_roadmapbench_leaderboard_claim: false

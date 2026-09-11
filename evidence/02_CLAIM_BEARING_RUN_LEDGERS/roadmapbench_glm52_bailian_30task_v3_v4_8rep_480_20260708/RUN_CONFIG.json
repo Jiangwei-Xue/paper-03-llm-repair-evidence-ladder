@@ -1,0 +1,172 @@
+{
+  "api_attempts": 5,
+  "api_key_env": "DASHSCOPE_API_KEY",
+  "api_request_surface": {
+    "cache_as_treatment_variable": false,
+    "cache_mode": "implicit_only",
+    "explicit_cache": false,
+    "not_sent_parameters": {
+      "frequency_penalty": "not_sent_by_protocol/provider_default",
+      "logit_bias": "not_sent_by_protocol/provider_default",
+      "presence_penalty": "not_sent_by_protocol/provider_default",
+      "reasoning_effort": "not_sent_by_protocol/enable_thinking_false_controls_reasoning",
+      "repetition_penalty": "not_sent_by_protocol/provider_default",
+      "response_format": "not_sent_by_protocol/provider_default",
+      "seed": "not_sent_by_protocol/provider_default",
+      "stop": "not_sent_by_protocol/provider_default",
+      "thinking": "not_sent_by_protocol/provider_default",
+      "tool_choice": "not_sent_by_protocol/provider_default",
+      "tools": "not_sent_by_protocol/provider_default",
+      "top_k": "not_sent_by_protocol/provider_default",
+      "top_p": "not_sent_by_protocol/provider_default"
+    },
+    "request_body_template_redacted": {
+      "enable_thinking": false,
+      "max_tokens": 32768,
+      "messages": [
+        {
+          "content": "<ROW_PROMPT_PLACEHOLDER>",
+          "role": "user"
+        }
+      ],
+      "model": "glm-5.2",
+      "stream": false,
+      "temperature": 0
+    },
+    "sent_parameters": {
+      "enable_thinking": false,
+      "max_tokens": 32768,
+      "stream": false,
+      "temperature": 0
+    }
+  },
+  "arms": [
+    "single_shot_v3",
+    "staged_v4"
+  ],
+  "budget": 600,
+  "context_mode": "targeted",
+  "created_utc": "2026-07-09T05:40:55.007704Z",
+  "edit_format": "file_ops_json",
+  "env_file_path_redacted": true,
+  "env_file_used": true,
+  "env_key_present": true,
+  "file_op_max_files": 8,
+  "jobs": 4,
+  "max_context_chars": 320000,
+  "max_tokens": 32768,
+  "methods": [
+    "loop_only"
+  ],
+  "model": "glm-5.2",
+  "patch_transport": "edit_json",
+  "planned_rows": 480,
+  "provider": "dashscope",
+  "qwen_contract_profile": "none",
+  "reps": 8,
+  "route_resolution": {
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "api_key_env_present": true,
+    "base_url_env_present": {
+      "BAILIAN_BASE_URL": true,
+      "DASHSCOPE_BASE_URL": false,
+      "QWEN_BASE_URL": false
+    },
+    "base_url_region": "cn-beijing",
+    "base_url_source": "BAILIAN_BASE_URL",
+    "model": "glm-5.2",
+    "notes": "Public-lite route artifact redacts workspace host; private raw execution metadata remains local-only.",
+    "openrouter_forbidden_for_glm_claim": true,
+    "provider": "dashscope",
+    "provider_route": "dashscope",
+    "route_closed_for_glm_claim": true,
+    "url_host_redacted": "<workspace-id>.cn-beijing.maas.aliyuncs.com",
+    "url_host_sha256": "bde31fdec14c03dce3ce1b3b2882c5e3308e14b203f1351f8243a326ba0eaca6",
+    "url_path": "/compatible-mode/v1/chat/completions",
+    "url_scheme": "https"
+  },
+  "run_name": "roadmapbench_glm52_bailian_30task_v3_v4_8rep_480_20260708",
+  "search_replace_max_edits": 6,
+  "skip_docker_on_invalid_patch": true,
+  "stage1_api_request_surface": {
+    "cache_as_treatment_variable": false,
+    "cache_mode": "implicit_only",
+    "explicit_cache": false,
+    "not_sent_parameters": {
+      "frequency_penalty": "not_sent_by_protocol/provider_default",
+      "logit_bias": "not_sent_by_protocol/provider_default",
+      "presence_penalty": "not_sent_by_protocol/provider_default",
+      "reasoning_effort": "not_sent_by_protocol/enable_thinking_false_controls_reasoning",
+      "repetition_penalty": "not_sent_by_protocol/provider_default",
+      "response_format": "not_sent_by_protocol/provider_default",
+      "seed": "not_sent_by_protocol/provider_default",
+      "stop": "not_sent_by_protocol/provider_default",
+      "thinking": "not_sent_by_protocol/provider_default",
+      "tool_choice": "not_sent_by_protocol/provider_default",
+      "tools": "not_sent_by_protocol/provider_default",
+      "top_k": "not_sent_by_protocol/provider_default",
+      "top_p": "not_sent_by_protocol/provider_default"
+    },
+    "request_body_template_redacted": {
+      "enable_thinking": false,
+      "max_tokens": 8192,
+      "messages": [
+        {
+          "content": "<ROW_PROMPT_PLACEHOLDER>",
+          "role": "user"
+        }
+      ],
+      "model": "glm-5.2",
+      "stream": false,
+      "temperature": 0
+    },
+    "sent_parameters": {
+      "enable_thinking": false,
+      "max_tokens": 8192,
+      "stream": false,
+      "temperature": 0
+    }
+  },
+  "stage1_max_tokens": 8192,
+  "staged_v4_profile": "large_upgrade_v1_mko_contract_fix",
+  "state_contract": "answer_state",
+  "tasks": [
+    "dsl-2.1.0-roadmap",
+    "dsl-2.2.0-roadmap",
+    "dsl-2.3.0-roadmap",
+    "fal-1.3.0-roadmap",
+    "fal-2.0.0-roadmap",
+    "fal-4.1.0-roadmap",
+    "fbr-2.42.0-roadmap",
+    "fbr-2.43.0-roadmap",
+    "fbr-3.0.0-roadmap",
+    "fyn-2.1.0-roadmap",
+    "fyn-2.7.0-roadmap",
+    "glz-3.0.0-roadmap",
+    "glz-4.0.0-roadmap",
+    "ktx-0.10.0-roadmap",
+    "mko-3.0.0-roadmap",
+    "mko-4.0.0-roadmap",
+    "mko-4.1.0-roadmap",
+    "opt-2.0.0-roadmap",
+    "opt-3.0.0-roadmap",
+    "plr-1.0.0-roadmap",
+    "prm-5.0.0-roadmap",
+    "pyg-1.6.3-roadmap",
+    "rat-0.24.0-roadmap",
+    "spc-3.5.0-roadmap",
+    "tpl-3.0.0-roadmap",
+    "tpl-3.2.0-roadmap",
+    "tpl-3.3.0-roadmap",
+    "tpl-4.0.0-roadmap",
+    "tpl-5.0.0-roadmap",
+    "tpl-5.1.0-roadmap"
+  ],
+  "tasks_root": "artifact-ref://b9a052f3a4db91ff1901ac2cd06e116dc92610b9",
+  "tier": "tier1",
+  "timeout_seconds": 600.0,
+  "tmp_task_root": "artifact-ref://0cf4599d98a11f023a6f2b4b1359b7e04a2a8ed4",
+  "v3_repair_attempts": 0,
+  "v4_repair_attempts": 1,
+  "whole_file_max_files": 3
+}

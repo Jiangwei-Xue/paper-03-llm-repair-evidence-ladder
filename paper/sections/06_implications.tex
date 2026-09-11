@@ -1,0 +1,49 @@
+\section{Implications for Repair Evaluation}
+\label{sec:implications}
+
+\subsection{A reported number should carry its claim coordinates}
+
+A percentage alone does not identify the question it answers. The extension stratum supports at least four valid summaries: 204/960 execution rows contain a governed action; 56/120 cells contain one by eight retained opportunities; 26/30 tasks contain one; and 14/960 rows pass the verifier. The values become comparable after their constructs, budgets, and units are aligned.
+
+The claim index provides a short reporting discipline. Authors can attach the five coordinates in prose, a result table, or a machine-readable record. \Cref{tab:claim-card} gives one example. The added information is small relative to the cost of a repository-level experiment, yet it fixes the denominator, the opportunity transformation, the support unit, and the meaning of the endpoint.
+
+\input{tables/table_claim_card}
+
+The mismatch set makes a numerical contrast explicit. The governed-action and verifier-pass rows in \Cref{tab:opportunity} share $K$, $U$, and $\Pi$; the construct and its interpretation boundary change together. Their gap therefore compares two evidence layers under the same opportunities. A contrast between cell-level action discovery at $k=8$ and execution-level pass prevalence also changes opportunity and unit. That gap describes a composite difference and cannot isolate one measurement choice.
+
+\subsection{Measurement fields require versioned semantics}
+
+The twelve GLM conflicts show why a result table needs more than a column name. A stored Boolean inherits meaning from runner logic, scorer logic, event ordering, and retained evidence. The operational invariant belongs in the schema. When the invariant cannot be established, a derived field should record the decision without rewriting the raw history.
+
+Versioned harmonization also needs unit-aware impact accounting. In this study, twelve row-level changes remove two positive cells and one positive task while leaving family support unchanged. Reporting only the revised row count would hide how the correction changes broader evidence. The same principle applies to parser changes, patch-application rules, timeout handling, and verifier-entry classification.
+
+Instrumentation provenance completes the field definition. A task surface, model route, provider snapshot, runner, and scorer jointly determine $\Pi$. Hosted models make exact regeneration difficult, but artifact replay and deterministic local-stage recomputation remain available when response, patch, and result lineage is retained. Provider-linked dates and hashed request identifiers add auditability without turning a mutable hosted backend into a fixed experimental object.
+
+\subsection{Opportunity and support answer complementary questions}
+
+Opportunity measures exposure within a fixed condition. Support measures breadth across conditions. The distinction matters most when a system is stochastic and the endpoint is sparse. Eight attempts can reveal that a model sometimes reaches a usable action surface. The same eight attempts do not create eight new tasks.
+
+The present data show both effects at once. Action discovery expands across the retained opportunity budget, reaching roughly two-fifths to one-half of cells. Endpoint evidence contracts when the unit broadens: 28 passing rows reduce to seven cells, three tasks, and two families. Neither pattern invalidates the row-level observations. Together they identify where the evidence is abundant and where it is narrow.
+
+This joint view can improve benchmark reports and system papers. A useful minimum is:
+\begin{enumerate}
+    \item the per-execution prevalence of each named signal;
+    \item the any-positive discovery value at the declared opportunity budget;
+    \item the number of positive cells, tasks, and repositories or task families;
+    \item the relation between upstream signals and the final operational endpoint.
+\end{enumerate}
+The four items describe frequency, opportunity, breadth, and criterion relation without collapsing them into one score.
+
+\subsection{Five substitutions explain many apparent disagreements}
+
+\Cref{tab:substitutions} summarizes five ways a repair statistic can acquire a stronger meaning than its evidence supplies. The substitutions are analytically distinct. Fixing the opportunity budget does not validate the underlying field. Validating the field does not establish verifier pass. A stable verifier does not by itself establish semantic adequacy.
+
+\input{tables/table_substitutions}
+
+The table also suggests a reviewable artifact standard. Each headline result can point to the raw column, construct rule, aggregation script, support table, verifier specification, and artifact manifest that sustains it. This creates a trace from claim to evidence rather than a longer list of generic reproducibility materials.
+
+\subsection{Intermediate signals retain a clear engineering role}
+
+Governed action is useful precisely because it sits upstream of pass. It distinguishes empty or invalid model output from a concrete source action that reaches strict application. A system with low governed-action prevalence has a different bottleneck from one with frequent actions and low endpoint yield. The claim index preserves that diagnostic information and keeps the repair endpoint separate.
+
+The same distinction applies when an intermediate signal is used for search, ranking, or feedback. Its association with pass describes a measurement relation. Estimating its value to a controller requires an intervention that changes signal access or selection while holding the relevant budget and task conditions fixed. The current audit supplies the constructs and reporting units needed for such a study.

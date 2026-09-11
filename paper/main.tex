@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[nopatch=footnote]{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{float}
+\usepackage{amsmath,mathtools}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{xurl}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{lineno}
+\usepackage{setspace}
+
+\input{metadata}
+\input{numbers}
+
+\hypersetup{
+  pdftitle={\PaperTitle},
+  pdfauthor={\PaperPDFAuthors},
+  pdfsubject={Measurement validity in repository-level LLM repair},
+  pdfkeywords={repository-level repair, coding agents, construct validity, repeated sampling, support concentration, test oracle, provenance}
+}
+
+\setlist{leftmargin=1.55em,itemsep=0.25em,topsep=0.4em}
+\setlength{\emergencystretch}{2em}
+\setlength{\parindent}{1.15em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\sisetup{detect-all}
+
+\newenvironment{keywords}{\par\smallskip\noindent\textbf{Keywords: }}{\par}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\claimindex}{\mathcal{I}}
+\newcommand{\supportprofile}{\Sigma}
+\newcommand{\discovery}{D}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\PaperTitle}
+\author{\PaperAuthorBlock}
+\date{\small DOI: \href{https://doi.org/\PaperDOI}{\PaperDOI}}
+
+\begin{document}
+% Uncomment for a review copy.
+% \linenumbers
+\maketitle
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\begin{keywords}
+repository-level software repair; coding agents; construct validity; evaluation methodology; repeated sampling; support concentration; test oracle; reproducibility
+\end{keywords}
+
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_framework}
+\input{sections/04_study_design}
+\input{sections/05_results}
+\input{sections/06_implications}
+\input{sections/07_threats}
+\input{sections/08_conclusion}
+
+\section*{Data and Artifact Availability}
+\input{sections/09_artifacts}
+
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\appendix
+\input{appendix/A_definitions}
+\input{appendix/B_opportunity}
+\input{appendix/C_sensitivity}
+\input{appendix/D_provenance}
+
+\end{document}

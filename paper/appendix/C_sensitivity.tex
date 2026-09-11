@@ -1,0 +1,12 @@
+\section{Stratified and Concentration Sensitivity}
+\label{app:sensitivity}
+
+\input{tables/table_stratified}
+
+All ten route-by-arm blocks contain more governed actions than verifier passes. The extension passes occur in the single-shot arm for both recorded DeepSeek routes; the staged arm has no pass in that task pool. These values describe historical conditions and are not estimates of an arm effect.
+
+\input{tables/table_positive_tasks}
+
+The clean passes all belong to the \code{tpl} family. The extension passes all belong to the \code{prm} family. In the leave-one-family-out analysis, excluding the corresponding positive family sets the pool's pass count to zero; excluding any other family preserves the pass numerator. This result follows directly from the support distribution in \Cref{tab:positive-tasks}.
+
+The retained analysis records also contain equal-family bootstrap summaries for action prevalence, pass prevalence, and task-level action-to-pass yield. Their intervals are descriptive sensitivity summaries over the retained families. The main text emphasizes observed support counts because the task pools were frozen evidence sets rather than draws from a defined family population.

@@ -1,0 +1,416 @@
+\begin{thebibliography}{50}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barr et~al.(2015)Barr, Harman, McMinn, Shahbaz, and
+  Yoo]{barr2015oracle}
+E.~T. Barr, M.~Harman, P.~McMinn, M.~Shahbaz, and S.~Yoo.
+\newblock The oracle problem in software testing: A survey.
+\newblock \emph{IEEE Transactions on Software Engineering}, 41\penalty0
+  (5):\penalty0 507--525, 2015.
+\newblock \doi{10.1109/TSE.2014.2372785}.
+
+\bibitem[Briand et~al.(1996)Briand, Morasca, and Basili]{briand1996measurement}
+L.~C. Briand, S.~Morasca, and V.~R. Basili.
+\newblock Property-based software engineering measurement.
+\newblock \emph{IEEE Transactions on Software Engineering}, 22\penalty0
+  (1):\penalty0 68--86, 1996.
+\newblock \doi{10.1109/32.481535}.
+
+\bibitem[Caban(2026)]{caban2026measurement}
+W.~Caban.
+\newblock Measurement without validity: The compounding reliability problem in
+  agentic {AI} evaluation.
+\newblock \emph{arXiv preprint arXiv:2608.00794}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.00794}.
+
+\bibitem[Chen et~al.(2021)Chen, Tworek, Jun, Yuan, de~Oliveira~Pinto, Kaplan,
+  Edwards, Burda, Joseph, Brockman, et~al.]{chen2021codex}
+M.~Chen, J.~Tworek, H.~Jun, Q.~Yuan, H.~P. de~Oliveira~Pinto, J.~Kaplan,
+  H.~Edwards, Y.~Burda, N.~Joseph, G.~Brockman, et~al.
+\newblock Evaluating large language models trained on code.
+\newblock \emph{arXiv preprint arXiv:2107.03374}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2107.03374}.
+
+\bibitem[Chen et~al.(2026)Chen, Sun, Shi, Peng, Gu, Lo, and
+  Jiang]{chen2026agenttests}
+Z.~Chen, Z.~Sun, Y.~Shi, C.~Peng, X.~Gu, D.~Lo, and L.~Jiang.
+\newblock Rethinking the value of agent-generated tests for {LLM}-based
+  software engineering agents.
+\newblock \emph{arXiv preprint arXiv:2602.07900}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2602.07900}.
+
+\bibitem[Durieux et~al.(2019)Durieux, Madeiral, Martinez, and
+  Abreu]{durieux2019repairthemall}
+T.~Durieux, F.~Madeiral, M.~Martinez, and R.~Abreu.
+\newblock Empirical review of java program repair tools: A large-scale
+  experiment on 2,141 bugs and 23,551 repair attempts.
+\newblock In \emph{Proceedings of the 27th ACM Joint European Software
+  Engineering Conference and Symposium on the Foundations of Software
+  Engineering}. ACM, 2019.
+\newblock \doi{10.1145/3338906.3338911}.
+
+\bibitem[Gazzola et~al.(2019)Gazzola, Micucci, and Mariani]{gazzola2019survey}
+L.~Gazzola, D.~Micucci, and L.~Mariani.
+\newblock Automatic software repair: A survey.
+\newblock \emph{IEEE Transactions on Software Engineering}, 45\penalty0
+  (1):\penalty0 34--67, 2019.
+\newblock \doi{10.1109/TSE.2017.2755013}.
+
+\bibitem[Gonz{\'a}lez-Barahona and Robles(2012)]{gonzalez2012reproducibility}
+J.~M. Gonz{\'a}lez-Barahona and G.~Robles.
+\newblock On the reproducibility of empirical software engineering studies
+  based on data retrieved from development repositories.
+\newblock \emph{Empirical Software Engineering}, 17\penalty0 (1--2):\penalty0
+  75--89, 2012.
+\newblock \doi{10.1007/s10664-011-9181-9}.
+
+\bibitem[He et~al.(2026)He, Shi, Jia, Yang, and Sun]{he2026process}
+J.~He, M.~Shi, J.~Jia, X.~Yang, and D.~Sun.
+\newblock What process evaluation of coding agents actually measures: Action,
+  task, and step are three different levels.
+\newblock \emph{arXiv preprint arXiv:2608.22960}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.22960}.
+
+\bibitem[Jain et~al.(2025)Jain, Han, Gu, Li, Yan, Zhang, Wang, Solar-Lezama,
+  Sen, and Stoica]{jain2025livecodebench}
+N.~Jain, K.~Han, A.~Gu, W.-D. Li, F.~Yan, T.~Zhang, S.~Wang, A.~Solar-Lezama,
+  K.~Sen, and I.~Stoica.
+\newblock {LiveCodeBench}: Holistic and contamination-free evaluation of large
+  language models for code.
+\newblock In \emph{International Conference on Learning Representations}, 2025.
+\newblock URL
+  \url{https://proceedings.iclr.cc/paper_files/paper/2025/hash/94074dd5a072d28ff75a76dabed43767-Abstract-Conference.html}.
+
+\bibitem[Jiang et~al.(2026)Jiang, Zheng, Vidra, and Setty]{jiang2026beyond}
+J.~Jiang, S.~Zheng, N.~Vidra, and S.~Setty.
+\newblock Beyond pass@$k$: Measuring reliability and security of agentic code
+  generation.
+\newblock \emph{arXiv preprint arXiv:2608.14711}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.14711}.
+
+\bibitem[Jimenez et~al.(2024)Jimenez, Yang, Wettig, Yao, Pei, Press, and
+  Narasimhan]{jimenez2024swebench}
+C.~E. Jimenez, J.~Yang, A.~Wettig, S.~Yao, K.~Pei, O.~Press, and K.~R.
+  Narasimhan.
+\newblock {SWE-bench}: Can language models resolve real-world {GitHub} issues?
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2310.06770}.
+
+\bibitem[Just et~al.(2014{\natexlab{a}})Just, Jalali, and
+  Ernst]{just2014defects4j}
+R.~Just, D.~Jalali, and M.~D. Ernst.
+\newblock {Defects4J}: A database of existing faults to enable controlled
+  testing studies for java programs.
+\newblock In \emph{Proceedings of the 23rd International Symposium on Software
+  Testing and Analysis}, pages 437--440. ACM, 2014{\natexlab{a}}.
+\newblock \doi{10.1145/2610384.2628055}.
+
+\bibitem[Just et~al.(2014{\natexlab{b}})Just, Jalali, Inozemtseva, Ernst,
+  Holmes, and Fraser]{just2014mutants}
+R.~Just, D.~Jalali, L.~Inozemtseva, M.~D. Ernst, R.~Holmes, and G.~Fraser.
+\newblock Are mutants a valid substitute for real faults in software testing?
+\newblock In \emph{Proceedings of the 22nd ACM SIGSOFT International Symposium
+  on Foundations of Software Engineering}, pages 654--665. ACM,
+  2014{\natexlab{b}}.
+\newblock \doi{10.1145/2635868.2635929}.
+
+\bibitem[Kitchenham et~al.(2002)Kitchenham, Pfleeger, Pickard, Jones, Hoaglin,
+  El~Emam, and Rosenberg]{kitchenham2002guidelines}
+B.~A. Kitchenham, S.~L. Pfleeger, L.~M. Pickard, P.~W. Jones, D.~C. Hoaglin,
+  K.~El~Emam, and J.~Rosenberg.
+\newblock Preliminary guidelines for empirical research in software
+  engineering.
+\newblock \emph{IEEE Transactions on Software Engineering}, 28\penalty0
+  (8):\penalty0 721--734, 2002.
+\newblock \doi{10.1109/TSE.2002.1027796}.
+
+\bibitem[Le et~al.(2019)Le, Bao, Lo, Xia, Li, and Pasareanu]{le2019reliability}
+X.-B.~D. Le, L.~Bao, D.~Lo, X.~Xia, S.~Li, and C.~S. Pasareanu.
+\newblock On reliability of patch correctness assessment.
+\newblock In \emph{2019 IEEE/ACM 41st International Conference on Software
+  Engineering}, pages 524--535. IEEE, 2019.
+\newblock \doi{10.1109/ICSE.2019.00064}.
+
+\bibitem[Liu et~al.(2023)Liu, Xia, Wang, and Zhang]{liu2023evalplus}
+J.~Liu, C.~S. Xia, Y.~Wang, and L.~Zhang.
+\newblock Is your code generated by {ChatGPT} really correct? rigorous
+  evaluation of large language models for code generation.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~36, 2023.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2023/hash/43e9d647ccd3e4b7b5baab53f0368686-Abstract.html}.
+
+\bibitem[Long and Rinard(2016)]{long2016searchspaces}
+F.~Long and M.~C. Rinard.
+\newblock An analysis of the search spaces for generate and validate patch
+  generation systems.
+\newblock In \emph{Proceedings of the 38th International Conference on Software
+  Engineering}, pages 702--713. ACM, 2016.
+\newblock \doi{10.1145/2884781.2884872}.
+
+\bibitem[Ma et~al.(2026)Ma, Chen, Gu, Li, Liu, and Jiang]{ma2026samesignal}
+W.~Ma, Z.~Chen, J.~Gu, T.~Li, S.~Liu, and L.~Jiang.
+\newblock Same signal, different semantics: A cross-framework behavioral
+  analysis of software engineering agents.
+\newblock \emph{arXiv preprint arXiv:2605.18332}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.18332}.
+
+\bibitem[Miserendino et~al.(2025)Miserendino, Wang, Patwardhan, and
+  Heidecke]{miserendino2025swelancer}
+S.~Miserendino, M.~Wang, T.~Patwardhan, and J.~Heidecke.
+\newblock {SWE-Lancer}: Can frontier {LLM}s earn \$1 million from real-world
+  freelance software engineering?
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning}, volume 267 of \emph{Proceedings of Machine Learning Research},
+  pages 44412--44450, 2025.
+\newblock URL \url{https://proceedings.mlr.press/v267/miserendino25a.html}.
+
+\bibitem[Monperrus(2018)]{monperrus2018bibliography}
+M.~Monperrus.
+\newblock Automatic software repair: A bibliography.
+\newblock \emph{ACM Computing Surveys}, 51\penalty0 (1):\penalty0 17:1--17:24,
+  2018.
+\newblock \doi{10.1145/3105906}.
+
+\bibitem[Qi et~al.(2015)Qi, Long, Achour, and Rinard]{qi2015plausibility}
+Z.~Qi, F.~Long, S.~Achour, and M.~C. Rinard.
+\newblock An analysis of patch plausibility and correctness for
+  generate-and-validate patch generation systems.
+\newblock In \emph{Proceedings of the 2015 International Symposium on Software
+  Testing and Analysis}, pages 24--36. ACM, 2015.
+\newblock \doi{10.1145/2771783.2771791}.
+
+\bibitem[Ralph and Tempero(2018)]{ralph2018construct}
+P.~Ralph and E.~D. Tempero.
+\newblock Construct validity in software engineering research and software
+  metrics.
+\newblock In \emph{Proceedings of the 22nd International Conference on
+  Evaluation and Assessment in Software Engineering}, pages 13--23. ACM, 2018.
+\newblock \doi{10.1145/3210459.3210461}.
+
+\bibitem[Ralph et~al.(2020)Ralph, Ali, Baltes, Bianculli, Diaz, Dittrich,
+  Ernst, Felderer, Feldt, Filieri, et~al.]{ralph2020empiricalstandards}
+P.~Ralph, N.~b. Ali, S.~Baltes, D.~Bianculli, J.~Diaz, Y.~Dittrich, N.~Ernst,
+  M.~Felderer, R.~Feldt, A.~Filieri, et~al.
+\newblock Empirical standards for software engineering research.
+\newblock \emph{arXiv preprint arXiv:2010.03525}, 2020.
+\newblock URL \url{https://arxiv.org/abs/2010.03525}.
+
+\bibitem[Rashid et~al.(2025)Rashid, Bock, Zhuang, Buchholz, Esler, Valentin,
+  Franceschi, Wistuba, Sivaprasad, Kim, Deoras, Zappella, and
+  Callot]{rashid2025swepolybench}
+M.~S. Rashid, C.~Bock, Y.~Zhuang, A.~Buchholz, T.~Esler, S.~Valentin,
+  L.~Franceschi, M.~Wistuba, P.~T. Sivaprasad, W.~J. Kim, A.~Deoras,
+  G.~Zappella, and L.~Callot.
+\newblock {SWE-PolyBench}: A multi-language benchmark for repository-level
+  evaluation of coding agents.
+\newblock \emph{arXiv preprint arXiv:2504.08703}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.08703}.
+
+\bibitem[Sahoo et~al.(2026)Sahoo, Mittal, Li, Ma, Steenhoek, Lin, and
+  Hu]{sahoo2026agentlens}
+P.~Sahoo, G.~Mittal, X.~Li, S.~Ma, B.~Steenhoek, P.~Lin, and Y.~Hu.
+\newblock {AgentLens}: Revealing the lucky pass problem in {SWE}-agent
+  evaluation.
+\newblock \emph{arXiv preprint arXiv:2605.12925}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.12925}.
+
+\bibitem[Segura et~al.(2016)Segura, Fraser, Sanchez, and
+  Ruiz-Cort{\'e}s]{segura2016metamorphic}
+S.~Segura, G.~Fraser, A.~B. Sanchez, and A.~Ruiz-Cort{\'e}s.
+\newblock A survey on metamorphic testing.
+\newblock \emph{IEEE Transactions on Software Engineering}, 42\penalty0
+  (9):\penalty0 805--824, 2016.
+\newblock \doi{10.1109/TSE.2016.2532875}.
+
+\bibitem[Shao et~al.(2026)Shao, Chen, Zhang, Pan, and Luo]{shao2026protocol}
+J.~Shao, H.~Chen, W.~Zhang, M.~Pan, and B.~Luo.
+\newblock Do agent benchmarks measure capability? protocol validity in the age
+  of agentic {AI}.
+\newblock \emph{arXiv preprint arXiv:2607.22368}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.22368}.
+
+\bibitem[Shu et~al.(2026)Shu, Chong, Zhou, Peng, Wu, Han, Zhuang, Yuan, and
+  Wang]{shu2026traceprobe}
+R.~Shu, C.~Y. Chong, X.~Zhou, Y.~Peng, Z.~Wu, X.~Han, Z.~Zhuang, G.~Yuan, and
+  Y.~Wang.
+\newblock What resolve rate hides: Trajectory structure diagnostics for coding
+  agents.
+\newblock \emph{arXiv preprint arXiv:2607.06184}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.06184}.
+
+\bibitem[Sj{\o}berg and Bergersen(2023)]{sjoberg2023construct}
+D.~I.~K. Sj{\o}berg and G.~R. Bergersen.
+\newblock Construct validity in software engineering.
+\newblock \emph{IEEE Transactions on Software Engineering}, 49\penalty0
+  (3):\penalty0 1374--1396, 2023.
+\newblock \doi{10.1109/TSE.2022.3176725}.
+
+\bibitem[Smith et~al.(2015)Smith, Barr, Le~Goues, and
+  Brun]{smith2015overfitting}
+E.~K. Smith, E.~T. Barr, C.~Le~Goues, and Y.~Brun.
+\newblock Is the cure worse than the disease? overfitting in automated program
+  repair.
+\newblock In \emph{Proceedings of the 2015 10th Joint Meeting on Foundations of
+  Software Engineering}, pages 532--543. ACM, 2015.
+\newblock \doi{10.1145/2786805.2786825}.
+
+\bibitem[Thai et~al.(2025)Thai, Le, Manh, Nhat, and Bui]{thai2025sweevo}
+M.~V.~T. Thai, T.~Le, D.~N. Manh, H.~P. Nhat, and N.~D.~Q. Bui.
+\newblock {SWE-EVO}: Benchmarking coding agents in long-horizon software
+  evolution scenarios.
+\newblock \emph{arXiv preprint arXiv:2512.18470}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2512.18470}.
+
+\bibitem[Wang et~al.(2026{\natexlab{a}})Wang, Zhang, Liu, Zhang, Chen, Li,
+  Chen, Fang, Zhang, Wang, Jing, Ma, and Cui]{wang2026verification}
+B.~Wang, C.~Zhang, D.~Liu, J.~Zhang, J.~Chen, M.~Li, M.~Chen, R.~Fang,
+  S.~Zhang, X.~Wang, Y.~Jing, Z.~Ma, and Z.~Cui.
+\newblock The verification horizon: No silver bullet for coding agent rewards.
+\newblock \emph{arXiv preprint arXiv:2606.26300}, 2026{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2606.26300}.
+
+\bibitem[Wang et~al.(2020)Wang, Wen, Lin, Wu, Qin, Zou, Mao, and
+  Jin]{wang2020apca}
+S.~Wang, M.~Wen, B.~Lin, H.~Wu, Y.~Qin, D.~Zou, X.~Mao, and H.~Jin.
+\newblock Automated patch correctness assessment: How far are we?
+\newblock In \emph{Proceedings of the 35th IEEE/ACM International Conference on
+  Automated Software Engineering}, pages 968--980. ACM, 2020.
+\newblock \doi{10.1145/3324884.3416590}.
+
+\bibitem[Wang et~al.(2025{\natexlab{a}})Wang, Li, Song, Xu, Tang, Zhuge, Pan,
+  Song, Li, Singh, et~al.]{wang2025openhands}
+X.~Wang, B.~Li, Y.~Song, F.~F. Xu, X.~Tang, M.~Zhuge, J.~Pan, Y.~Song, B.~Li,
+  J.~Singh, et~al.
+\newblock {OpenHands}: An open platform for {AI} software developers as
+  generalist agents.
+\newblock In \emph{International Conference on Learning Representations},
+  2025{\natexlab{a}}.
+\newblock URL \url{https://openreview.net/forum?id=OJd3ayDDoF}.
+
+\bibitem[Wang et~al.(2025{\natexlab{b}})Wang, Pradel, and
+  Liu]{wang2025patchdiff}
+Y.~Wang, M.~Pradel, and Z.~Liu.
+\newblock Are ``solved issues'' in {SWE-bench} really solved correctly? an
+  empirical study.
+\newblock \emph{arXiv preprint arXiv:2503.15223}, 2025{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2503.15223}.
+
+\bibitem[Wang et~al.(2026{\natexlab{b}})Wang, Han, Shang, Tang, and
+  Liu]{wang2026safetyaudit}
+Y.~Wang, X.~Han, D.~Shang, Y.~Tang, and B.~Liu.
+\newblock Safety, or just capability? a validity audit of agent-safety
+  benchmarks.
+\newblock \emph{arXiv preprint arXiv:2607.28685}, 2026{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2607.28685}.
+
+\bibitem[Wohlin et~al.(2012)Wohlin, Runeson, H{\"o}st, Ohlsson, Regnell, and
+  Wessl{\'e}n]{wohlin2012experimentation}
+C.~Wohlin, P.~Runeson, M.~H{\"o}st, M.~C. Ohlsson, B.~Regnell, and
+  A.~Wessl{\'e}n.
+\newblock \emph{Experimentation in Software Engineering}.
+\newblock Springer, 2012.
+\newblock \doi{10.1007/978-3-642-29044-2}.
+
+\bibitem[Xia et~al.(2024)Xia, Deng, Dunn, and Zhang]{xia2024agentless}
+C.~S. Xia, Y.~Deng, S.~Dunn, and L.~Zhang.
+\newblock Agentless: Demystifying llm-based software engineering agents.
+\newblock \emph{arXiv preprint arXiv:2407.01489}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.01489}.
+
+\bibitem[Xin and Reiss(2017)]{xin2017difftgen}
+Q.~Xin and S.~P. Reiss.
+\newblock Identifying test-suite-overfitted patches through test case
+  generation.
+\newblock In \emph{Proceedings of the 26th ACM SIGSOFT International Symposium
+  on Software Testing and Analysis}, pages 226--236. ACM, 2017.
+\newblock \doi{10.1145/3092703.3092718}.
+
+\bibitem[Xiong et~al.(2018)Xiong, Liu, Zeng, Zhang, and
+  Huang]{xiong2018patchcorrectness}
+Y.~Xiong, X.~Liu, M.~Zeng, L.~Zhang, and G.~Huang.
+\newblock Identifying patch correctness in test-based program repair.
+\newblock In \emph{Proceedings of the 40th International Conference on Software
+  Engineering}, pages 789--799. ACM, 2018.
+\newblock \doi{10.1145/3180155.3180182}.
+
+\bibitem[Xu and Wu(2026)]{xu2026validation}
+X.~Xu and W.~Wu.
+\newblock Validation evidence in {LLM} repair agents: How much of what passes
+  actually tests the bug?
+\newblock \emph{arXiv preprint arXiv:2607.28871}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.28871}.
+
+\bibitem[Xu et~al.(2026)Xu, Yang, Shen, Xu, Gao, Wu, Shi, Xie, Chen, Wu, Zeng,
+  Heinrich, Zhang, Chen, Li, and Chang]{xu2026roadmapbench}
+X.~Xu, R.~Yang, H.~Shen, W.~Xu, B.~Gao, R.~Wu, K.~Shi, W.~Xie, X.~Chen, M.~Wu,
+  J.~Zeng, M.~Heinrich, E.~Zhang, L.~Chen, K.~Li, and B.~Chang.
+\newblock Roadmapbench: Evaluating long-horizon agentic software development
+  across version upgrades.
+\newblock \emph{arXiv preprint arXiv:2605.15846}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.15846}.
+
+\bibitem[Yang et~al.(2024)Yang, Jimenez, Wettig, Lieret, Yao, Narasimhan, and
+  Press]{yang2024sweagent}
+J.~Yang, C.~E. Jimenez, A.~Wettig, K.~Lieret, S.~Yao, K.~R. Narasimhan, and
+  O.~Press.
+\newblock {SWE-agent}: Agent-computer interfaces enable automated software
+  engineering.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37, 2024.
+\newblock URL \url{https://openreview.net/forum?id=mO6mZAo3de}.
+
+\bibitem[Yang et~al.(2025)Yang, Lieret, Jimenez, Wettig, Khandpur, Zhang, Hui,
+  Press, Schmidt, and Yang]{yang2025swesmith}
+J.~Yang, K.~Lieret, C.~E. Jimenez, A.~Wettig, K.~Khandpur, Y.~Zhang, B.~Hui,
+  O.~Press, L.~Schmidt, and D.~Yang.
+\newblock {SWE-smith}: Scaling data for software engineering agents.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~38, 2025.
+\newblock \doi{10.52202/085713-3239}.
+
+\bibitem[Ye et~al.(2019)Ye, Martinez, Durieux, and Monperrus]{ye2019quixbugs}
+H.~Ye, M.~Martinez, T.~Durieux, and M.~Monperrus.
+\newblock A comprehensive study of automatic program repair on the {QuixBugs}
+  benchmark.
+\newblock \emph{Journal of Systems and Software}, 157:\penalty0 110825, 2019.
+\newblock \doi{10.1016/j.jss.2019.110825}.
+\newblock Article 110825.
+
+\bibitem[Ye et~al.(2021)Ye, Martinez, and Monperrus]{ye2021patchassessment}
+H.~Ye, M.~Martinez, and M.~Monperrus.
+\newblock Automated patch assessment for program repair at scale.
+\newblock \emph{Empirical Software Engineering}, 26\penalty0 (2):\penalty0 20,
+  2021.
+\newblock \doi{10.1007/s10664-020-09920-w}.
+
+\bibitem[Yi et~al.(2018)Yi, Tan, Mechtaev, B{\"o}hme, and
+  Roychoudhury]{yi2018testsuite}
+J.~Yi, S.~H. Tan, S.~Mechtaev, M.~B{\"o}hme, and A.~Roychoudhury.
+\newblock A correlation study between automated program repair and test-suite
+  metrics.
+\newblock \emph{Empirical Software Engineering}, 23\penalty0 (5):\penalty0
+  2948--2979, 2018.
+\newblock \doi{10.1007/s10664-017-9552-y}.
+
+\bibitem[Zhang et~al.(2025)Zhang, He, Zhang, Kang, Li, Xie, Wang, Wang, Huang,
+  Fu, Nallipogu, Lin, Dang, Rajmohan, and Zhang]{zhang2025swebenchlive}
+L.~Zhang, S.~He, C.~Zhang, Y.~Kang, B.~Li, C.~Xie, J.~Wang, M.~Wang, Y.~Huang,
+  S.~Fu, E.~Nallipogu, Q.~Lin, Y.~Dang, S.~Rajmohan, and D.~Zhang.
+\newblock {SWE-bench} goes live!
+\newblock \emph{arXiv preprint arXiv:2505.23419}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.23419}.
+
+\bibitem[Zhang et~al.(2024)Zhang, Ruan, Fan, and
+  Roychoudhury]{zhang2024autocoderover}
+Y.~Zhang, H.~Ruan, Z.~Fan, and A.~Roychoudhury.
+\newblock {AutoCodeRover}: Autonomous program improvement.
+\newblock In \emph{Proceedings of the 33rd ACM SIGSOFT International Symposium
+  on Software Testing and Analysis}, pages 1592--1604. ACM, 2024.
+\newblock \doi{10.1145/3650212.3680384}.
+
+\end{thebibliography}

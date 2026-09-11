@@ -1,0 +1,4 @@
+stratum,total_rows,rows_mapped_to_provider_metadata,rows_with_provider_date,rows_with_trace_id,rows_with_call_or_request_id,rows_with_prompt_hash,rows_with_request_hash,rows_with_response_hash,rows_with_patch_hash,rows_with_verifier_output_hash,rows_with_result_row_hash,rows_mapped_to_provider_metadata_pct,rows_with_provider_date_pct,rows_with_trace_id_pct,rows_with_call_or_request_id_pct,rows_with_prompt_hash_pct,rows_with_request_hash_pct,rows_with_response_hash_pct,rows_with_patch_hash_pct,rows_with_verifier_output_hash_pct,rows_with_result_row_hash_pct
+deepseek_clean,960,803,803,803,803,960,803,803,235,235,960,83.65,83.65,83.65,83.65,100.0,83.65,83.65,24.48,24.48,100.0
+deepseek_extension,960,819,819,819,819,960,819,819,319,319,960,85.31,85.31,85.31,85.31,100.0,85.31,85.31,33.23,33.23,100.0
+glm_supplementary,480,383,383,0,383,480,414,383,153,153,480,79.79,79.79,0.0,79.79,100.0,86.25,79.79,31.88,31.88,100.0

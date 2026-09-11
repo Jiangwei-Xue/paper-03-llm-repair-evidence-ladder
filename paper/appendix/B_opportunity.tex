@@ -1,0 +1,20 @@
+\section{Full Opportunity Analysis}
+\label{app:opportunity}
+
+\input{tables/table_opportunity_full}
+
+\subsection{Relation to ordered prefixes}
+
+The main estimand averages all size-$k$ subsets of the eight retained outcomes in each cell. The retained analysis records also support an ordered-prefix sensitivity:
+\[
+\discovery^{\mathrm{prefix}}_{M,s}(k)
+=
+\frac{1}{|\mathcal C_s|}
+\sum_{c\in\mathcal C_s}
+\mathbf{1}\!\left(\max_{1\le r\le k}M_{c,r}=1\right).
+\]
+The prefix form depends on the retained repetition order. The subset-averaged form removes that ordering choice and is therefore the primary analysis. Both forms use the same eight historical rows and converge to the same $k=8$ endpoint.
+
+\subsection{Interpretation}
+
+Observed-opportunity discovery is a finite-corpus quantity. It can be reproduced exactly from the retained cell table. It does not model adaptive selection, correlated future provider outputs, or additional attempts beyond eight. A prospective reliability study would require a sampling design that treats future rollouts as the target population.

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "time_standard": "UTC",
+  "offline_replay": {
+    "python_minimum": "3.10",
+    "network_required": false,
+    "docker_required": false,
+    "model_api_required": false
+  },
+  "derived_analysis": {
+    "dependency_lock": "requirements.txt",
+    "entrypoint": "python3 reproduce.py"
+  },
+  "manuscript": {
+    "entrypoint": "sh paper/COMPILE_SOURCE.sh <ARCHIVE_PATH>",
+    "toolchain_details": "paper/README.md"
+  },
+  "fresh_external_execution": {
+    "included": false,
+    "requirements": "docs/REPRODUCTION_PROTOCOL.md"
+  }
+}

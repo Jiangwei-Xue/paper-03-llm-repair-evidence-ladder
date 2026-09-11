@@ -1,0 +1,13 @@
+stratum,action_harmonized,verifier_pass,count
+deepseek_clean,0,0,761
+deepseek_clean,0,1,0
+deepseek_clean,1,0,185
+deepseek_clean,1,1,14
+deepseek_extension,0,0,756
+deepseek_extension,0,1,0
+deepseek_extension,1,0,190
+deepseek_extension,1,1,14
+glm_supplementary,0,0,394
+glm_supplementary,0,1,0
+glm_supplementary,1,0,86
+glm_supplementary,1,1,0

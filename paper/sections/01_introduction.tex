@@ -1,0 +1,29 @@
+\section{Introduction}
+\label{sec:introduction}
+
+One retained repair stratum in this study contains \ExtensionActions{} governed actions among \ExtensionRows{} executions. At an eight-opportunity budget, \ExtensionActionCells{} of \ExtensionCells{} fixed cells expose at least one governed action. Across the full retained stratum, \ExtensionActionTasks{} of 30 tasks support at least one governed action. The same stratum contains \ExtensionPasses{} verifier-passing executions. Those passes come from two cells of one task and one task family. Each statement is accurate. They describe different constructs at different aggregation levels.
+
+Repository-level repair produces a long path from model output to an accepted patch. A response must satisfy an interface, specify an edit, apply to a particular revision, remain within the allowed action surface, enter an execution environment, and satisfy a task-specific verifier. Modern coding-agent benchmarks retain many of these events because they help explain failures and guide system development \citep{jimenez2024swebench,yang2024sweagent,xia2024agentless,xu2026roadmapbench}. The final report often compresses them into a small set of rates. Compression becomes a measurement problem when the name of the rate leaves its construct, budget, or support implicit.
+
+The problem begins before aggregation. A stored field is an output of a runner and scorer, not a self-validating fact. In the supplementary GLM records studied here, \ContradictionRows{} rows carry a positive historical action flag while the retained patch-application check records failure. The paper's governed-action definition requires that check to succeed. Counting the raw flag would therefore include rows that do not meet the stated construct. The discrepancy changes support at several levels: positive rows fall from 98 to 86, positive cells from 29 to 27, and positive tasks from 20 to 19.
+
+A valid upstream construct still leaves a criterion question. A governed action establishes that a non-empty, allowed source change reached the strict application surface. It does not establish that the verifier passed. In the two DeepSeek strata, only \CleanPasses{} of \CleanActions{} and \ExtensionPasses{} of \ExtensionActions{} governed actions reach the endpoint. Repetition then changes what is likely to be observed within a fixed cell: action discovery rises substantially across one to eight retained opportunities, while pass discovery remains sparse. Moving from execution rows to cells, tasks, and task families reveals a much narrower support base.
+
+The endpoint has its own interpretation boundary. A verifier pass records satisfaction of a frozen executable criterion. Software testing and automated program repair have long distinguished test plausibility from complete correctness \citep{barr2015oracle,qi2015plausibility,smith2015overfitting,le2019reliability}. This study checks the local verifier with reference, no-op, and near-reference negative controls. The controls establish discrimination on the tested cases; semantic adequacy remains a broader construct.
+
+We organize these issues with a \emph{claim index}. For a reported estimate $\widehat\theta$, the index records
+\[
+\claimindex(\widehat\theta)=\langle C,K,U,V,\Pi\rangle.
+\]
+Here $C$ is the operational construct, $K$ is the opportunity and selection design, and $U$ is the support unit. $V$ states the strongest interpretation licensed by the observed criterion. $\Pi$ identifies the task, runner, scorer, model/provider, and artifact stratum that produced the measurement. The index exposes which measurement conditions agree and which differ. A contrast that attributes a difference to one coordinate must match or model the remaining coordinates. This formulation gives a concrete rule for defining, auditing, and comparing repair results.
+
+We evaluate the model on \TotalRows{} retained executions arranged as \TotalCells{} fixed cells with eight repetitions each. The two DeepSeek task pools contain 30 task instances apiece and share no exact task IDs. The GLM boundary stratum reuses the 30 clean-pool task IDs under a separate hosted-model context. The design supports two forms of pattern triangulation: a task-surface shift within the DeepSeek harness context and a hosted-model boundary on a matched task surface. Each stratum retains its own denominator.
+
+The paper makes three contributions.
+\begin{enumerate}
+    \item We define a claim-indexed model of repair evidence with three measurement boundaries---field to construct, construct to verifier, and verifier to semantic adequacy---plus two orthogonal aggregation dimensions: opportunity and support.
+    \item We apply the model to a \TotalRows-execution audit and quantify four linked effects: field-level construct conflicts, low conditional endpoint yield, asymmetric accumulation under repeated opportunities, and concentration of endpoint evidence across cells, tasks, and task families.
+    \item We provide a reproducible audit protocol that preserves raw fields, derives versioned harmonized constructs, checks the endpoint with positive and negative controls, and links claim-bearing tables to row- and provider-level provenance.
+\end{enumerate}
+
+The resulting account treats intermediate signals as measurements with defined roles. It preserves their diagnostic value while keeping the endpoint, budget, and breadth of evidence visible.

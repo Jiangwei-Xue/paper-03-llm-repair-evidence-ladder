@@ -1,0 +1,16 @@
+
+\begin{table}[H]
+\centering
+\caption{Study strata. Tasks/families reports the number of task instances and retained task-family identifiers. Each cell contains eight model executions.}
+\label{tab:strata}
+\small
+\begin{tabularx}{\linewidth}{@{}lXrrrr@{}}
+\toprule
+Stratum & Task relation & Routes & Tasks/families & Cells $\times$ reps. & Rows \\
+\midrule
+DeepSeek clean & Base task surface & 2 & 30 / 14 & 120 $\times$ 8 & 960 \\
+DeepSeek extension & Task-ID-disjoint extension & 2 & 30 / 13 & 120 $\times$ 8 & 960 \\
+GLM boundary & Same task IDs as clean & 1 & 30 / 14 & 60 $\times$ 8 & 480 \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,162 @@
+{
+  "created_at": "2026-07-06T17:16:25+0800",
+  "docker_daemon_network_pull_used": false,
+  "failed_or_replaced_attempts": [
+    {
+      "reason": "large-layer direct transfer repeatedly stalled or failed over dockerproxy.net; not counted as imported",
+      "task": "pyg-2.6.0-roadmap"
+    },
+    {
+      "reason": "dockerproxy.net direct TLS failures before successful import; not counted as imported",
+      "task": "rat-0.28.0-roadmap"
+    },
+    {
+      "reason": "manifest preflight failed in this session; not attempted as successful import",
+      "task": "slt-1.14.0-roadmap"
+    },
+    {
+      "reason": "manifest preflight later failed in this session; not counted as imported",
+      "task": "ruf-0.12.0-roadmap"
+    },
+    {
+      "reason": "blob direct transfer failed; successfully imported afterward via docker.1ms.run",
+      "task": "tpl-5.0.0-roadmap via dockerproxy.net"
+    }
+  ],
+  "proxy_disabled_in_client": true,
+  "purpose": "Consolidated provenance for the third batch of ten RoadmapBench task images imported by direct mirror retrieval.",
+  "schema_version": 1,
+  "successful_task_count": 10,
+  "tasks": [
+    {
+      "docker_images_size": "1.7GB",
+      "local_image_id": "sha256:fb95180a9cf824989fb63fd1e79c4c3f601a7216eb52f69d1eb6d1a40ac566a3",
+      "local_tag": "roadmapbench-dsl-2.3.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-dsl-2.3.0-roadmap:latest",
+      "official_manifest_digest": "sha256:6f033a0c8207f4f3d1eea5082518912386f36a195f63e86c886b011ffb7ed4e2",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-dsl-2.3.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:6f033a0c8207f4f3d1eea5082518912386f36a195f63e86c886b011ffb7ed4e2",
+      "task": "dsl-2.3.0-roadmap"
+    },
+    {
+      "docker_images_size": "260MB",
+      "local_image_id": "sha256:2da81720a1a58a3137df86cde2fac8429c2dde90da6502e43675dbe13a268b6f",
+      "local_tag": "roadmapbench-fal-4.1.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fal-4.1.0-roadmap:latest",
+      "official_manifest_digest": "sha256:d60c072d1c8377215404bfaf5814d0c360af83b48d74cb0a70d06ccae0b28257",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-fal-4.1.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:d60c072d1c8377215404bfaf5814d0c360af83b48d74cb0a70d06ccae0b28257",
+      "task": "fal-4.1.0-roadmap"
+    },
+    {
+      "docker_images_size": "1.1GB",
+      "local_image_id": "sha256:45e73f2ce26e9527cb048edb65082268c40750a4740833c488fbf4a10eae29ed",
+      "local_tag": "roadmapbench-fbr-3.0.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fbr-3.0.0-roadmap:latest",
+      "official_manifest_digest": "sha256:1d3b3eab7774ec3406ca499a8cd851f426dbf173fceb05693e3d9590896619d5",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-fbr-3.0.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:1d3b3eab7774ec3406ca499a8cd851f426dbf173fceb05693e3d9590896619d5",
+      "task": "fbr-3.0.0-roadmap"
+    },
+    {
+      "docker_images_size": "1.27GB",
+      "local_image_id": "sha256:a65f62c6eba780136382d7c7e003d6f239cc1170e3891b4ce2558daf48354920",
+      "local_tag": "roadmapbench-fyn-2.7.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fyn-2.7.0-roadmap:latest",
+      "official_manifest_digest": "sha256:9943231893d0d52b269fa74b526e0540d3db1419623d50fb444dea50374fbcb0",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-fyn-2.7.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:9943231893d0d52b269fa74b526e0540d3db1419623d50fb444dea50374fbcb0",
+      "task": "fyn-2.7.0-roadmap"
+    },
+    {
+      "docker_images_size": "338MB",
+      "local_image_id": "sha256:7d8f1eed69a4c337fcc071e8dacb88352377fc3a79b338a2f483b76909357ded",
+      "local_tag": "roadmapbench-tpl-3.0.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-tpl-3.0.0-roadmap:latest",
+      "official_manifest_digest": "sha256:f30b4af83daadede914a91934e1ff64e7db2ec27d0b8368ed52287d840623076",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-tpl-3.0.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:f30b4af83daadede914a91934e1ff64e7db2ec27d0b8368ed52287d840623076",
+      "task": "tpl-3.0.0-roadmap"
+    },
+    {
+      "docker_images_size": "340MB",
+      "local_image_id": "sha256:97879ceadde241cbab0d29c909f9543463d76c171a440b628de42de63d9c41b5",
+      "local_tag": "roadmapbench-tpl-3.3.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-tpl-3.3.0-roadmap:latest",
+      "official_manifest_digest": "sha256:80fb4aa2dbf7551086d59528ebd4369abf4f3034ffc318496a0ffec3bc6dbc39",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-tpl-3.3.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:80fb4aa2dbf7551086d59528ebd4369abf4f3034ffc318496a0ffec3bc6dbc39",
+      "task": "tpl-3.3.0-roadmap"
+    },
+    {
+      "docker_images_size": "340MB",
+      "local_image_id": "sha256:674dc2e5b8be2a3fa679985682c082f23f2bf1a710a6dcd54416148aad8897b6",
+      "local_tag": "roadmapbench-tpl-4.0.0-roadmap:latest",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-tpl-4.0.0-roadmap:latest",
+      "official_manifest_digest": "sha256:120bedd7b1732659eaea646347db631fb8f347e60253c8dcf722f39391e813b9",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-tpl-4.0.0-roadmap:latest",
+      "record_completeness": "complete_import_before_interrupted_json",
+      "registry_used_for_successful_import": "dockerproxy.net",
+      "successful_mirror_manifest_digest": "sha256:120bedd7b1732659eaea646347db631fb8f347e60253c8dcf722f39391e813b9",
+      "task": "tpl-4.0.0-roadmap"
+    },
+    {
+      "docker_images_size": "340MB",
+      "local_image_id": "sha256:915eed540b19e592e2b5dae962903eb4f5cb42542bd0fdcb8763df2f7a718f0e",
+      "local_tag": "roadmapbench-tpl-5.0.0-roadmap:latest",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-tpl-5.0.0-roadmap:latest",
+      "official_manifest_digest": "sha256:15d4f76538b43a99c9e26dd5cb60fd74bf72d799e0b107abfbea6e66ca0c675d",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-tpl-5.0.0-roadmap:latest",
+      "record_completeness": "complete_json",
+      "registry_used_for_successful_import": "docker.1ms.run",
+      "successful_mirror_manifest_digest": "sha256:15d4f76538b43a99c9e26dd5cb60fd74bf72d799e0b107abfbea6e66ca0c675d",
+      "task": "tpl-5.0.0-roadmap"
+    },
+    {
+      "docker_images_size": "341MB",
+      "local_image_id": "sha256:d9030c75ff29cc1e544beeecc69724f519bfad49a619d1bbdb58c4375bb97288",
+      "local_tag": "roadmapbench-tpl-5.1.0-roadmap:latest",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-tpl-5.1.0-roadmap:latest",
+      "official_manifest_digest": "sha256:049ef3d98a806cddc26077c69e71f23dc6cb6c1fee081141c241b5a9ab1562d6",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-tpl-5.1.0-roadmap:latest",
+      "record_completeness": "complete_json",
+      "registry_used_for_successful_import": "docker.1ms.run",
+      "successful_mirror_manifest_digest": "sha256:049ef3d98a806cddc26077c69e71f23dc6cb6c1fee081141c241b5a9ab1562d6",
+      "task": "tpl-5.1.0-roadmap"
+    },
+    {
+      "docker_images_size": "945MB",
+      "local_image_id": "sha256:9cb2b447a2a5ea66d426765c23e0f6e36f01e33ac439e0744a0032a70da19f51",
+      "local_tag": "roadmapbench-spc-3.5.0-roadmap:latest",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-spc-3.5.0-roadmap:latest",
+      "official_manifest_digest": "sha256:8ae9c8a2cb66591f86b8b52a97fd0e7a5050fcd65ab53b30d02c24e00f155193",
+      "official_mirror_manifest_match": true,
+      "official_tag": "znpt/roadmapbench-spc-3.5.0-roadmap:latest",
+      "record_completeness": "complete_json",
+      "registry_used_for_successful_import": "docker.1ms.run",
+      "successful_mirror_manifest_digest": "sha256:8ae9c8a2cb66591f86b8b52a97fd0e7a5050fcd65ab53b30d02c24e00f155193",
+      "task": "spc-3.5.0-roadmap"
+    }
+  ]
+}

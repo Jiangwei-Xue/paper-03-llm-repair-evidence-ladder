@@ -1,0 +1,20 @@
+\section{Provenance and Endpoint Coverage}
+\label{app:provenance}
+
+\input{tables/table_provider}
+
+Provider-linked coverage is partial and explicit. The DeepSeek clean and extension strata map 803 and 819 rows, respectively, to retained provider response metadata. The GLM boundary maps 383 rows. Each mapped row includes a server date and a hashed provider request or call identifier; DeepSeek mappings also include hashed trace identifiers. Request-hash coverage is slightly broader in the GLM stratum than response-metadata coverage. Prompt and final result-row hashes cover every row.
+
+\input{tables/table_run_windows}
+
+\Cref{tab:run-windows} reports canonical result-row timestamps. A provider's server date identifies the service event; the canonical timestamp identifies the retained result record. The archive stores them as separate events.
+
+\subsection{Endpoint-control accounting}
+
+The endpoint audit records 33 attempts. Twelve initial attempts encounter a host-mount permission problem before verifier entry. Corrected fresh-path attempts yield 21 verifier-reached outcomes: six reference runs, six no-op runs, and nine mutant runs. The two task instances are \code{fal-1.3.0-roadmap} and \code{tpl-3.2.0-roadmap}. The former contributes three reference, three no-op, and six mutant runs; the latter contributes three of each reference and no-op plus three mutants.
+
+The retained control table contains control type, expected and observed outcome, verifier-entry state, infrastructure classification, replay disagreement, exit status, runtime, environment identity, and hashes for retained outputs. Protected verifier material is stored separately.
+
+\subsection{Development chronology}
+
+The project archive retains two design records with July 5, 2026 filesystem metadata, their normalized hashes and timestamp records, canonical execution records from July 7--10, provider-linked service metadata for mapped rows, and local Git records from July 10. Timestamp types are normalized separately and labeled by trust class.

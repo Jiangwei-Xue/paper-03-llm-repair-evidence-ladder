@@ -1,0 +1,16 @@
+
+\begin{table}[H]
+\centering
+\caption{Verifier-reached endpoint controls. Twelve earlier attempts that stopped at a host-mount boundary are recorded separately as infrastructure events.}
+\label{tab:controls}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Control & Runs & Expected & Expected observed & Replay disagreement \\
+\midrule
+Gold/reference & 6 & Pass & 6/6 & 0 \\
+No-op & 6 & Fail & 6/6 & 0 \\
+Reference-derived mutant & 9 & Fail & 9/9 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

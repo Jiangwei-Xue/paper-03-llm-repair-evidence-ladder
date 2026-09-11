@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\caption{Operational variables used in the claim-bearing analysis.}
+\label{tab:definitions}
+\small
+\begin{tabularx}{\linewidth}{@{}L{0.19\linewidth}L{0.27\linewidth}Y@{}}
+\toprule
+Variable & Positive rule & Interpretation \\
+\midrule
+Raw action $\widetilde A_i$ & Historical action flag equals 1 & The historical scorer recorded a positive action decision \\
+Application $E_i$ & Deterministic edit application equals 1 & The explicit edit operations passed the deterministic application stage \\
+Patch check $G_i$ & Patch-application check equals 1 & The retained patch-application check succeeded \\
+Governed action $A_i$ & $\widetilde A_i E_i G_i=1$ & A positive action decision supported by the retained application evidence \\
+Verifier pass $P_i$ & Historical endpoint field equals 1 & The candidate met the frozen local endpoint \\
+Semantic adequacy $Y_i$ & No complete operational measure & The patch satisfies the intended behavior beyond the observed verifier surface \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item Schema keys are \code{action\_governance\_success}, \code{deterministic\_edit\_apply\_success}, \code{patch\_apply\_check\_ok}, and \code{answer\_success}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

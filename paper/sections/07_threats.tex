@@ -1,0 +1,20 @@
+\section{Threats to Validity}
+\label{sec:threats}
+
+\paragraph{Task and model scope.}
+The empirical magnitudes come from frozen, admission-filtered RoadmapBench-derived task pools, two historical DeepSeek route labels, and one GLM route. The 60 DeepSeek task IDs are disjoint across the clean and extension pools; the GLM stratum reuses the clean tasks. Results may differ under other repositories, stronger models, agent loops, edit interfaces, and verifiers. Prior APR and live-code studies show that benchmark composition and time can materially affect observed performance \citep{durieux2019repairthemall,jain2025livecodebench}. The claim-indexed framework is broader than these magnitudes because the same construct, opportunity, support, and endpoint choices arise across repository-repair systems.
+
+\paragraph{Historical instrumentation.}
+The study reconstructs measurement semantics from retained records. Twelve GLM rows lack the original artifact needed to identify the exact legacy mechanism behind the action/apply conflict. The harmonized field applies a documented invariant and preserves the disputed raw values. Other unobserved historical inconsistencies may remain where the artifact chain is incomplete. The retained reconciliation table makes the known boundary inspectable.
+
+\paragraph{Support units.}
+Execution rows share cells and tasks, and task instances may share repositories or technical structure. The retained records provide task-family identifiers but no reliable repository identifier. Support profiles therefore stop at task family. Family labels are useful for concentration analysis, though they are an imperfect substitute for repository-level clustering. The paper uses support counts descriptively and avoids row-level independence assumptions.
+
+\paragraph{Opportunity estimand.}
+Observed-opportunity discovery is an exact re-expression of eight retained outcomes per cell. It does not estimate a future provider's sampling distribution or the behavior of an adaptive best-of-$k$ policy. Its purpose is a matched within-corpus comparison of how two signals become visible as the retained opportunity budget increases.
+
+\paragraph{Endpoint scope.}
+The control audit covers 21 verifier-reached runs across two tasks and two task families. It samples three useful control classes but leaves many incorrect-patch forms untested. Generated-test and patch-assessment studies demonstrate both the value and incompleteness of stronger automated checks \citep{xin2017difftgen,ye2021patchassessment,liu2023evalplus}. The result supports local discrimination on these controls. Semantic adequacy, developer intent, and behavior beyond the frozen test surface remain outside the observed endpoint.
+
+\paragraph{Hosted-model provenance.}
+Provider-linked metadata is available for \ProviderMapped{} of \TotalRows{} rows, while prompt and result-row hashes cover the full corpus. These records support request-level chronology and artifact linkage. They cannot recover opaque provider weights or guarantee bitwise regeneration. The paper treats a hosted route and access period as part of the instrumentation stratum.

@@ -1,0 +1,120 @@
+{
+  "allow_safe_symlinks": false,
+  "documentation": {
+    "commands": [
+      {
+        "command": "python3 tools/VERIFY_ARCHIVE.py verify --archive <ARCHIVE_PATH> --public",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "verify",
+        "timeout_seconds": 600
+      },
+      {
+        "command": "python3 replay_all.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "h5-e5-vcr-replay",
+        "timeout_seconds": 600
+      },
+      {
+        "command": "python3 docker/verify_metadata.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "docker-metadata",
+        "timeout_seconds": 120
+      },
+      {
+        "command": "python3 experiment_code/verify_snapshot.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "experiment-code",
+        "timeout_seconds": 120
+      },
+      {
+        "command": "python3 prompt_audits/verify_reports.py --archive <ARCHIVE_PATH>",
+        "cwd": ".",
+        "file": "README.md",
+        "id": "prompt-audit-reports",
+        "timeout_seconds": 120
+      },
+      {
+        "command": "sh COMPILE_SOURCE.sh <ARCHIVE_PATH>",
+        "cwd": "paper",
+        "file": "README.md",
+        "id": "compile-current",
+        "timeout_seconds": 300
+      }
+    ]
+  },
+  "public_disclosure_profile": "minimal",
+  "references": {
+    "json_globs": [
+      "experiments_manifest.json",
+      "results_manifest.json",
+      "PUBLIC_ENVIRONMENT.json",
+      "docker/*.json",
+      "docker/*.jsonl"
+    ],
+    "markdown_files": [
+      "README.md",
+      "EVIDENCE_INDEX.md",
+      "ARTIFACT_BOUNDARY.md",
+      "H5_MANIFEST_CONTRACT.md",
+      "LICENSE.md",
+      "LICENSE_POLICY_V10.md",
+      "LICENSES/README.md",
+      "LICENSES/CC-BY-4.0-NOTICE.md",
+      "THIRD_PARTY_NOTICES.md",
+      "RELEASE_AUDIT.md",
+      "docs/EXPERIMENT_DESIGN.md",
+      "docs/EXPERIMENT_CODE_INVENTORY.md",
+      "docs/REPRODUCTION_PROTOCOL.md",
+      "docs/PAPER_RESULTS_MAP.md",
+      "docs/METHOD_VERSION_HISTORY.md",
+      "docs/EXPERIMENT_TIMELINE.md",
+      "docs/MODEL_AND_DATA_PROVENANCE.md",
+      "docs/FORMAL_INTERACTION_PROTOCOL.md",
+      "docs/LARGE_ARTIFACT_AVAILABILITY.md",
+      "docs/FIGURE_TABLE_PROVENANCE.md",
+      "protocols/README.md",
+      "protocols/main_matrix/FROZEN_MAIN_MATRIX_PROTOCOL_V2_20260707.md",
+      "protocols/main_matrix/OUTPUT_TOKEN_BUDGET_FREEZE_REPORT_20260707.md",
+      "protocols/extension_pool/ROADMAPBENCH_RANDOM30_EXTENSION_PROTOCOL_20260710.md",
+      "protocols/extension_pool/ROADMAPBENCH_RANDOM30_EXTENSION_CANDIDATE_SUMMARY_20260710.md",
+      "protocols/model_boundary/GLM52_HOSTED_BOUNDARY_PROTOCOL.md",
+      "prompt_audits/README.md",
+      "CHANGELOG.md",
+      "docker/README.md",
+      "experiment_code/README.md",
+      "paper/README.md",
+      "paper/LICENSE.md",
+      "paper/CLAIM_EVIDENCE_MAP.md",
+      "paper/BUILD_REPORT.md",
+      "paper/SOURCE_NOTES.md",
+      "CURRENT_MANUSCRIPT.md"
+    ],
+    "stale_patterns": [
+      "/Users/",
+      "/home/",
+      "private_row_ledger_sha256",
+      "private_replay_record_sha256",
+      "public_sanitized_rehash",
+      "compact_evidence/reports/"
+    ]
+  },
+  "release_class": "public",
+  "release_name": "claim_indexed_repair_github_reproduction_20260911_v13",
+  "schema_version": 1,
+  "source_date_epoch": 1789084800,
+  "statistical_claims": [],
+  "tool_contract": {
+    "mandatory_public_checks": [
+      "package_integrity",
+      "documentation",
+      "archive_integrity",
+      "reproducibility"
+    ],
+    "name": "experiment-release",
+    "version": "1.2.1"
+  }
+}

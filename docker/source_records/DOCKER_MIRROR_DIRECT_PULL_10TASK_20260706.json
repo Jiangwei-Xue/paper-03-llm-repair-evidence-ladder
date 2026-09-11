@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "registry": "docker.1ms.run",
+  "proxy_disabled_in_client": true,
+  "tasks": [
+    {
+      "task": "dsl-2.1.0-roadmap",
+      "repo": "znpt/roadmapbench-dsl-2.1.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-dsl-2.1.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-dsl-2.1.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:b58525c97d6f313bdcceade6eac6091eb7b957bdaf5f767fcaee936a9fcc3fb5",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:b58525c97d6f313bdcceade6eac6091eb7b957bdaf5f767fcaee936a9fcc3fb5",
+      "local_repo_digests": [
+        "roadmapbench-dsl-2.1.0-roadmap@sha256:b58525c97d6f313bdcceade6eac6091eb7b957bdaf5f767fcaee936a9fcc3fb5",
+        "znpt/roadmapbench-dsl-2.1.0-roadmap@sha256:b58525c97d6f313bdcceade6eac6091eb7b957bdaf5f767fcaee936a9fcc3fb5"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "fal-1.3.0-roadmap",
+      "repo": "znpt/roadmapbench-fal-1.3.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-fal-1.3.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-fal-1.3.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:85fe912c973d9fbb97284e1599ffa333fd7f707abbb5ad664b9ea898a8e714cf",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:85fe912c973d9fbb97284e1599ffa333fd7f707abbb5ad664b9ea898a8e714cf",
+      "local_repo_digests": [
+        "docker.1ms.run/znpt/roadmapbench-fal-1.3.0-roadmap@sha256:85fe912c973d9fbb97284e1599ffa333fd7f707abbb5ad664b9ea898a8e714cf",
+        "roadmapbench-fal-1.3.0-roadmap@sha256:85fe912c973d9fbb97284e1599ffa333fd7f707abbb5ad664b9ea898a8e714cf",
+        "znpt/roadmapbench-fal-1.3.0-roadmap@sha256:85fe912c973d9fbb97284e1599ffa333fd7f707abbb5ad664b9ea898a8e714cf"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "fbr-2.43.0-roadmap",
+      "repo": "znpt/roadmapbench-fbr-2.43.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-fbr-2.43.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-fbr-2.43.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:ec14ff1dfcf49e75a9b4c611b3da4b71fc777cd533592512d447b4352b5082c8",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:ec14ff1dfcf49e75a9b4c611b3da4b71fc777cd533592512d447b4352b5082c8",
+      "local_repo_digests": [
+        "roadmapbench-fbr-2.43.0-roadmap@sha256:ec14ff1dfcf49e75a9b4c611b3da4b71fc777cd533592512d447b4352b5082c8",
+        "znpt/roadmapbench-fbr-2.43.0-roadmap@sha256:ec14ff1dfcf49e75a9b4c611b3da4b71fc777cd533592512d447b4352b5082c8"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "glz-3.0.0-roadmap",
+      "repo": "znpt/roadmapbench-glz-3.0.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-glz-3.0.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-glz-3.0.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:5a644c408e59ce2e365390718feb1c678809acfc47686808663aaa126101595f",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:5a644c408e59ce2e365390718feb1c678809acfc47686808663aaa126101595f",
+      "local_repo_digests": [
+        "docker.1ms.run/znpt/roadmapbench-glz-3.0.0-roadmap@sha256:5a644c408e59ce2e365390718feb1c678809acfc47686808663aaa126101595f",
+        "roadmapbench-glz-3.0.0-roadmap@sha256:5a644c408e59ce2e365390718feb1c678809acfc47686808663aaa126101595f",
+        "znpt/roadmapbench-glz-3.0.0-roadmap@sha256:5a644c408e59ce2e365390718feb1c678809acfc47686808663aaa126101595f"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "mko-3.0.0-roadmap",
+      "repo": "znpt/roadmapbench-mko-3.0.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-mko-3.0.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-mko-3.0.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:2e90fa87739e4306ae26e671963460c001b60a1086cb575ff9328250853e5cad",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:2e90fa87739e4306ae26e671963460c001b60a1086cb575ff9328250853e5cad",
+      "local_repo_digests": [
+        "docker.1ms.run/znpt/roadmapbench-mko-3.0.0-roadmap@sha256:2e90fa87739e4306ae26e671963460c001b60a1086cb575ff9328250853e5cad",
+        "roadmapbench-mko-3.0.0-roadmap@sha256:2e90fa87739e4306ae26e671963460c001b60a1086cb575ff9328250853e5cad",
+        "znpt/roadmapbench-mko-3.0.0-roadmap@sha256:2e90fa87739e4306ae26e671963460c001b60a1086cb575ff9328250853e5cad"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "mko-4.0.0-roadmap",
+      "repo": "znpt/roadmapbench-mko-4.0.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-mko-4.0.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-mko-4.0.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:bd4c6edfdac0e281ba5c325a60b17a3d5b28eff7de75721374362e9f045e5313",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:bd4c6edfdac0e281ba5c325a60b17a3d5b28eff7de75721374362e9f045e5313",
+      "local_repo_digests": [
+        "roadmapbench-mko-4.0.0-roadmap@sha256:bd4c6edfdac0e281ba5c325a60b17a3d5b28eff7de75721374362e9f045e5313",
+        "znpt/roadmapbench-mko-4.0.0-roadmap@sha256:bd4c6edfdac0e281ba5c325a60b17a3d5b28eff7de75721374362e9f045e5313"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "opt-2.0.0-roadmap",
+      "repo": "znpt/roadmapbench-opt-2.0.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-opt-2.0.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-opt-2.0.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:6cbe24c3b766a47dc99d4465d0fc7df4f37b9493561983115d34a1eb1c15bc28",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:6cbe24c3b766a47dc99d4465d0fc7df4f37b9493561983115d34a1eb1c15bc28",
+      "local_repo_digests": [
+        "docker.1ms.run/znpt/roadmapbench-opt-2.0.0-roadmap@sha256:6cbe24c3b766a47dc99d4465d0fc7df4f37b9493561983115d34a1eb1c15bc28",
+        "roadmapbench-opt-2.0.0-roadmap@sha256:6cbe24c3b766a47dc99d4465d0fc7df4f37b9493561983115d34a1eb1c15bc28",
+        "znpt/roadmapbench-opt-2.0.0-roadmap@sha256:6cbe24c3b766a47dc99d4465d0fc7df4f37b9493561983115d34a1eb1c15bc28"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "pyg-1.6.3-roadmap",
+      "repo": "znpt/roadmapbench-pyg-1.6.3-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-pyg-1.6.3-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-pyg-1.6.3-roadmap:latest",
+      "remote_manifest_digest": "sha256:952404c452439d6ff7801d85c3a071f4933f1d77b8eae5b184a2d61e51c20d38",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:952404c452439d6ff7801d85c3a071f4933f1d77b8eae5b184a2d61e51c20d38",
+      "local_repo_digests": [
+        "roadmapbench-pyg-1.6.3-roadmap@sha256:952404c452439d6ff7801d85c3a071f4933f1d77b8eae5b184a2d61e51c20d38",
+        "znpt/roadmapbench-pyg-1.6.3-roadmap@sha256:952404c452439d6ff7801d85c3a071f4933f1d77b8eae5b184a2d61e51c20d38"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "rat-0.24.0-roadmap",
+      "repo": "znpt/roadmapbench-rat-0.24.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-rat-0.24.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-rat-0.24.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:eb9f6f50ba144d3ec67245904ff56d409053951379cae27573a65210c6c4abfd",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:eb9f6f50ba144d3ec67245904ff56d409053951379cae27573a65210c6c4abfd",
+      "local_repo_digests": [
+        "roadmapbench-rat-0.24.0-roadmap@sha256:eb9f6f50ba144d3ec67245904ff56d409053951379cae27573a65210c6c4abfd",
+        "znpt/roadmapbench-rat-0.24.0-roadmap@sha256:eb9f6f50ba144d3ec67245904ff56d409053951379cae27573a65210c6c4abfd"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    },
+    {
+      "task": "tpl-3.2.0-roadmap",
+      "repo": "znpt/roadmapbench-tpl-3.2.0-roadmap",
+      "mirror_tag": "docker.1ms.run/znpt/roadmapbench-tpl-3.2.0-roadmap:latest",
+      "local_tag": "znpt/roadmapbench-tpl-3.2.0-roadmap:latest",
+      "remote_manifest_digest": "sha256:62768daacc7b7ebff77da8700d1b0b2156c0fef649567735bbdd279deee48072",
+      "media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "local_image_id": "sha256:62768daacc7b7ebff77da8700d1b0b2156c0fef649567735bbdd279deee48072",
+      "local_repo_digests": [
+        "docker.1ms.run/znpt/roadmapbench-tpl-3.2.0-roadmap@sha256:62768daacc7b7ebff77da8700d1b0b2156c0fef649567735bbdd279deee48072",
+        "roadmapbench-tpl-3.2.0-roadmap@sha256:62768daacc7b7ebff77da8700d1b0b2156c0fef649567735bbdd279deee48072",
+        "znpt/roadmapbench-tpl-3.2.0-roadmap@sha256:62768daacc7b7ebff77da8700d1b0b2156c0fef649567735bbdd279deee48072"
+      ],
+      "digest_match": true,
+      "tag_status": "tagged_or_present",
+      "network_path": "urllib direct to docker.1ms.run with ProxyHandler({})"
+    }
+  ]
+}

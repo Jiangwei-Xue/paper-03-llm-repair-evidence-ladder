@@ -1,0 +1,168 @@
+schema_version: main_matrix_variable_freeze_v2_20260707
+status: frozen_before_claim_bearing_execution
+supersedes:
+  - Artifact_Chain/FROZEN_MAIN_MATRIX_PROTOCOL_20260707.md
+active_protocol: Artifact_Chain/FROZEN_MAIN_MATRIX_PROTOCOL_V2_20260707.md
+
+allowed_matrix_axes:
+  model:
+    - deepseek-v4-pro
+    - deepseek-v4-flash
+  arm:
+    - single_shot_v3
+    - staged_v4
+  repeat_index:
+    values: 0..7
+
+frozen_dataset:
+  task_root: roadmap_swe_evo_probe/data/roadmapbench_30_clean
+  task_count: 30
+  tasks:
+    - dsl-2.1.0-roadmap
+    - dsl-2.2.0-roadmap
+    - dsl-2.3.0-roadmap
+    - fal-1.3.0-roadmap
+    - fal-2.0.0-roadmap
+    - fal-4.1.0-roadmap
+    - fbr-2.42.0-roadmap
+    - fbr-2.43.0-roadmap
+    - fbr-3.0.0-roadmap
+    - fyn-2.1.0-roadmap
+    - fyn-2.7.0-roadmap
+    - glz-3.0.0-roadmap
+    - glz-4.0.0-roadmap
+    - ktx-0.10.0-roadmap
+    - mko-3.0.0-roadmap
+    - mko-4.0.0-roadmap
+    - mko-4.1.0-roadmap
+    - opt-2.0.0-roadmap
+    - opt-3.0.0-roadmap
+    - plr-1.0.0-roadmap
+    - prm-5.0.0-roadmap
+    - pyg-1.6.3-roadmap
+    - rat-0.24.0-roadmap
+    - spc-3.5.0-roadmap
+    - tpl-3.0.0-roadmap
+    - tpl-3.2.0-roadmap
+    - tpl-3.3.0-roadmap
+    - tpl-4.0.0-roadmap
+    - tpl-5.0.0-roadmap
+    - tpl-5.1.0-roadmap
+  integrity_source: Artifact_Chain/ROADMAPBENCH_30_CLEAN_TASK_FILE_INTEGRITY_POST_GOLD_REPAIR_20260706.json
+  gold_sanity_source: roadmap_swe_evo_probe/runs/roadmapbench_solution_script_sanity_30task_clean_final2_calibrated_20260706/SUMMARY.json
+
+frozen_prompt_and_method:
+  prompt_variant: loop_only
+  state_contract: answer_state
+  edit_transport: strict_edit_json_file_ops_json
+  v3_repair_attempts: 0
+  v4_repair_attempts: 1
+  staged_v4_profile: large_upgrade_v1_mko_contract_fix
+  forbidden_prompt_material:
+    - solution_changes_patch
+    - gold_patch
+    - hidden_tests
+    - oracle_tests
+    - verifier_only_material
+    - scorer_only_material
+    - expected_fix
+
+frozen_provider_policy:
+  provider: deepseek
+  route: direct_provider_api
+  forbidden_routes:
+    - openrouter
+  forbidden_main_matrix_models:
+    - claude
+    - gpt
+    - qwen
+    - kimi
+    - glm
+  reasoning_mode: disabled_unless_provider_side_unavoidable_and_recorded
+  web_or_tool_access: none
+
+frozen_sampling_and_runtime:
+  reps: 8
+  planned_rows: 960
+  jobs: 4
+  budget: 600
+  max_tokens: 32768
+  stage1_max_tokens: 8192
+  timeout_seconds: 600
+  api_attempts: 5
+  context_mode: targeted
+  max_context_chars: 320000
+  whole_file_max_files: 3
+  search_replace_max_edits: 6
+  file_op_max_files: 8
+  resume: true
+  skip_docker_on_invalid_patch: true
+
+frozen_edit_semantics:
+  fuzzy_matching: forbidden
+  approximate_matching: forbidden
+  silent_skipped_ops: forbidden
+  empty_old_anchors: forbidden
+  no_op_edit_success: forbidden
+  whole_file_rewrite: forbidden_unless_diagnostic_mode
+  path_auto_fix: leading_dot_slash_only
+  whitespace_normalization: forbidden
+  indentation_normalization: forbidden
+  tabs_spaces_conversion: forbidden
+  line_ending_conversion: forbidden_unless_diagnostic_mode
+  multi_op_same_file: sequential_order_recorded
+  failed_op_policy: fail_closed_before_docker
+
+frozen_metrics:
+  - generation_success
+  - state_contract_valid
+  - patch_extracted
+  - patch_apply_success
+  - docker_verifier_entered
+  - answer_success
+  - action_governance_success
+  - reliable_composite_success
+  - finish_reason_length_count
+
+required_pre_execution_gates:
+  py_compile:
+    - roadmap_swe_evo_probe/scripts/roadmapbench_tier1_matched_v3_v4_runner.py
+    - roadmap_swe_evo_probe/scripts/roadmapbench_prompt_visibility_audit.py
+    - roadmap_swe_evo_probe/scripts/test_answer_state_contract.py
+  local_contract_test: roadmap_swe_evo_probe/scripts/test_answer_state_contract.py
+  dry_run:
+    per_model_planned_rows: 480
+    combined_planned_rows: 960
+    api_artifacts: 0
+    raw_responses: 0
+    candidate_patches: 0
+  prompt_visibility:
+    failure_count: 0
+    feedback_leak_audit_failures: 0
+    missing_attempt_prompt_artifacts: 0
+  e5_vcr_preflight:
+    row_ledger_count: 960
+    replay_record_count: 960
+  hash_chain:
+    - Artifact_Chain/SHA256SUMS.txt
+    - Artifact_Chain/HASH_MANIFEST.jsonl
+    - Artifact_Chain/RUN_LINEAGE.md
+
+post_execution_required:
+  result_rows: 960
+  postrun_e5_vcr_row_ledger_count: 960
+  postrun_e5_vcr_replay_record_count: 960
+  prompt_visibility_failure_count: 0
+  openrouter_rows: 0
+  final_failure_category_present_for_all_rows: true
+
+disallowed_hidden_variables:
+  - provider_fallback
+  - model_alias_without_resolved_id
+  - prompt_template_change
+  - task_repair_after_first_api_call
+  - docker_image_replacement_after_first_api_call
+  - row_deletion_or_exclusion
+  - unrecorded_retry_policy
+  - post_hoc_metric_change
+  - post_hoc_task_specific_prompt_tuning

@@ -1,0 +1,11 @@
+pool,model,arm,rows,state_contract_valid,deterministic_edit_apply,action_raw,action_harmonized,docker_or_verifier_entry,answer_success,reliable_composite,pass_with_action,action_to_pass
+deepseek_clean,deepseek-v4-flash,single_shot_v3,240,217,53,51,51,53,4,4,4,0.0784313725490196
+deepseek_clean,deepseek-v4-flash,staged_v4,240,146,35,34,34,35,3,3,3,0.08823529411764706
+deepseek_clean,deepseek-v4-pro,single_shot_v3,240,210,63,56,56,63,2,2,2,0.03571428571428571
+deepseek_clean,deepseek-v4-pro,staged_v4,240,154,62,58,58,62,5,5,5,0.08620689655172414
+deepseek_extension,deepseek-v4-flash,single_shot_v3,240,195,75,60,60,75,7,7,7,0.11666666666666667
+deepseek_extension,deepseek-v4-flash,staged_v4,240,158,42,41,41,42,0,0,0,0.0
+deepseek_extension,deepseek-v4-pro,single_shot_v3,240,199,66,61,61,66,7,7,7,0.11475409836065574
+deepseek_extension,deepseek-v4-pro,staged_v4,240,152,46,42,42,46,0,0,0,0.0
+glm_supplementary,glm-5.2,single_shot_v3,240,204,58,45,40,41,0,0,0,0.0
+glm_supplementary,glm-5.2,staged_v4,240,151,70,53,46,48,0,0,0,0.0

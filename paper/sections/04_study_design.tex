@@ -1,0 +1,95 @@
+\section{Study Design and Measures}
+\label{sec:study}
+
+\subsection{Evidence corpus}
+
+The corpus contains \TotalRows{} historical executions grouped into three frozen strata (\Cref{tab:strata}). The DeepSeek clean stratum combines 30 tasks, two hosted model routes, and two protocol arms. Each task--route--arm cell has eight repetitions, yielding $30\times2\times2\times8=960$ rows. The extension stratum has the same factorial structure over a second 30-task pool. Its task IDs are disjoint from the clean pool; 11 task-family identifiers occur in both pools.
+
+The GLM boundary stratum reuses the 30 clean-pool task IDs with one hosted model route and the same two protocol arms, yielding $30\times1\times2\times8=480$ rows. The corpus therefore supplies a partial-overlap design. Clean-to-extension changes the task surface while retaining the general DeepSeek harness context. Clean-to-GLM holds the task IDs fixed and changes the hosted-model context. The strata support pattern triangulation; each keeps its own descriptive denominator.
+
+The task pools were frozen, admission-filtered RoadmapBench-derived sets spanning five implementation languages. They are study surfaces rather than probability samples from all repository-repair tasks. Cross-benchmark APR results and temporally constructed code benchmarks both show why the sampling surface must remain part of the claim \citep{durieux2019repairthemall,jain2025livecodebench}. The retained metadata includes task-family identifiers. A reliable repository identifier is absent, so support is reported through the family level.
+
+\input{tables/table_strata}
+
+\subsection{Repair protocol}
+
+The frozen repair interface asks the model for a structured state and explicit edit operations. Write operations modify or create source files; delete operations remove source files. The evaluator applies the operations sequentially to a working copy. Exact anchors must match. The application layer performs no fuzzy matching, implicit path repair, silent skip, or unreported whole-file replacement. A failed required operation ends application for that candidate.
+
+Two historical prompt arms, \code{single\_shot\_v3} and \code{staged\_v4}, appear in every stratum. The DeepSeek strata also contain two route labels, \code{deepseek-v4-flash} and \code{deepseek-v4-pro}. These labels define recorded measurement conditions. Route-by-arm summaries appear in \Cref{app:sensitivity}; the main analysis aggregates within each frozen stratum.
+
+\subsection{Raw and harmonized variables}
+
+Let $\widetilde A_i$ indicate a positive value in the historical \code{action\_governance\_success} field. Let $E_i$ indicate \code{deterministic\_edit\_apply\_success}=1, and let $G_i$ indicate \code{patch\_apply\_check\_ok}=1. The harmonized governed-action construct is
+\begin{equation}
+A_i = \mathbf{1}(\widetilde A_i=1 \land E_i=1 \land G_i=1).
+\label{eq:harmonized-action}
+\end{equation}
+The raw action flag supplies the non-empty, allowed action decision; $E_i$ and $G_i$ enforce the retained application evidence. The retained derived field implements \Cref{eq:harmonized-action}. Raw values remain unchanged.
+
+Verifier pass is
+\begin{equation}
+P_i = \mathbf{1}(\code{answer\_success}_i=1).
+\label{eq:pass}
+\end{equation}
+These indicators count observed positive events among all planned executions. A row without a positive record contributes no positive event; the indicator does not assign a semantic cause to that row. Earlier pipeline fields such as state validity and partial reward are retained where available, but their historical coverage is not consistent across all three strata. Cross-stratum estimands therefore use $A_i$ and $P_i$.
+
+\subsection{Execution prevalence and conditional endpoint yield}
+
+For stratum $s$ with $N_s$ rows, execution prevalence is
+\begin{equation}
+\widehat p_{M,s}=\frac{1}{N_s}\sum_{i\in s}M_i,
+\qquad M\in\{A,P\}.
+\label{eq:prevalence}
+\end{equation}
+The relation from governed action to verifier pass is summarized by conditional endpoint yield:
+\begin{equation}
+\widehat y_{A\rightarrow P,s}
+=
+\frac{\sum_{i\in s}A_iP_i}{\sum_{i\in s}A_i}.
+\label{eq:yield}
+\end{equation}
+This quantity describes the retained pipeline: among executions that satisfy the governed-action construct, what fraction attain the frozen endpoint?
+
+We also report the complete $A\times P$ table. The $A=0,P=1$ cell checks pipeline conformance. The $A=1,P=0$ cell measures how much upstream action evidence remains below the endpoint.
+
+\subsection{Observed-opportunity discovery}
+
+Every fixed cell contains eight retained binary outcomes. For signal $M$, let $m_{c,M}$ be the number of positive outcomes among the eight rows in cell $c$. For an opportunity budget $k\in\{1,\ldots,8\}$, the probability that a uniformly chosen size-$k$ subset of those eight observed rows contains at least one positive is
+\begin{equation}
+ d_{c,M}(k)
+ =
+ 1-
+ \frac{\binom{8-m_{c,M}}{k}}{\binom{8}{k}},
+\label{eq:cell-discovery}
+\end{equation}
+with $\binom{n}{k}=0$ for $n<k$. We average this exact finite-population quantity across cells:
+\begin{equation}
+\discovery_{M,s}(k)
+=
+\frac{1}{|\mathcal C_s|}
+\sum_{c\in\mathcal C_s}d_{c,M}(k).
+\label{eq:discovery}
+\end{equation}
+We call \Cref{eq:discovery} \emph{observed-opportunity discovery}. It re-expresses the eight retained outcomes without assuming an order. Because all cells have the same eight repetitions, $\discovery_{M,s}(1)$ equals row-level prevalence and $\discovery_{M,s}(8)$ equals the fraction of cells with any observed positive. The full $k=1,\ldots,8$ table and an ordered-prefix sensitivity appear in \Cref{app:opportunity}.
+
+\subsection{Support profiles}
+
+For signal $M$, a cell, task, or task family is positive when it contains at least one row with $M_i=1$. The support profile in \Cref{eq:support-profile} reports the resulting four counts. Denominators remain visible in all tables. Row counts describe event frequency; cell counts describe repeated-condition coverage; task and family counts describe breadth over the retained task surface.
+
+We also inspect concentration within the small set of positive tasks. This step records how many pass rows each supporting task contributes. It adds no model comparison and no task-removal rule.
+
+\subsection{Endpoint controls}
+
+The endpoint audit uses three existing control types on fresh task states under the frozen verifier:
+\begin{enumerate}
+    \item an exact reference patch, expected to pass;
+    \item an unmodified no-op state, expected to fail;
+    \item a deterministic reference-derived mutant, expected to fail.
+\end{enumerate}
+The retained audit contains \ControlAttempts{} attempts. Twelve stopped at a host-mount boundary before verifier entry. The remaining \VerifierReachedControls{} runs cover two tasks and two task families. Mutants are used only as controlled negative probes; they are not treated as replacements for naturally occurring faults \citep{just2014mutants}. For each verifier-reached run, the archive retains the expected result, observed result, replay status, environment identity, exit status, and output hashes.
+
+\subsection{Artifact lineage}
+
+The retained row table links executions to task, cell, repetition, protocol arm, model route, UTC timestamp, and raw and derived measurement fields. All \TotalRows{} rows retain prompt and result-row integrity hashes. Provider-linked metadata---including a server date and a hashed provider request or call identifier---is recoverable for \ProviderMapped{} rows. Request hashes cover \RequestHashed{} rows and response hashes cover \ResponseHashed{} rows. \Cref{app:provenance} reports coverage by stratum and distinguishes canonical row timestamps from provider event timestamps.
+
+All analyses in this paper are deterministic transformations of the retained records. No model generation, patch execution, or verifier call is added by the manuscript analysis. This separation between retrieved evidence and analysis derivatives follows established reproducibility guidance for studies built from evolving software repositories \citep{gonzalez2012reproducibility}.

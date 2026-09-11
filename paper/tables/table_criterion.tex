@@ -1,0 +1,17 @@
+
+\begin{table}[H]
+\centering
+\caption{Execution-level relation between the harmonized governed-action construct $A$ and verifier pass $P$. Conditional endpoint yield is $\Pr(P=1\mid A=1)$ as a descriptive fraction within each stratum.}
+\label{tab:criterion}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Stratum & Rows & $A{=}1$ & $P{=}1$ & $A{=}0,P{=}1$ & $A{=}1,P{=}0$ & Yield & Pass tasks \\
+\midrule
+DeepSeek clean & 960 & 199 & 14 & 0 & 185 & 7.04\% & 2/30 \\
+DeepSeek extension & 960 & 204 & 14 & 0 & 190 & 6.86\% & 1/30 \\
+GLM boundary & 480 & 86 & 0 & 0 & 86 & 0.00\% & 0/30 \\
+\bottomrule
+\end{tabular}
+\end{table}

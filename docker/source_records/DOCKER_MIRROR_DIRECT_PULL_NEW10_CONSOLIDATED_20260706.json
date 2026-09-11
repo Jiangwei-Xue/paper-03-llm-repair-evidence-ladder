@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-07-06",
+  "docker_daemon_network_pull_used": false,
+  "note": "The first six images were imported during interrupted script runs before JSON output was written; their local image ids/tags are recorded. The final four have complete manifest/layer records in DOCKER_MIRROR_DIRECT_PULL_NEW10_REMAINING4_20260706.json.",
+  "proxy_disabled_in_client": true,
+  "purpose": "Consolidated local provenance for ten newly imported RoadmapBench task images from direct mirror retrieval.",
+  "registry": "dockerproxy.net",
+  "schema_version": 1,
+  "tasks": [
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:a869ca76d39759cbd02f6f25d161d8052e872b639856915b83273cc8de54fc51",
+      "local_tag": "roadmapbench-dsl-2.2.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-dsl-2.2.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-dsl-2.2.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-dsl-2.2.0-roadmap@sha256:a869ca76d39759cbd02f6f25d161d8052e872b639856915b83273cc8de54fc51",
+        "znpt/roadmapbench-dsl-2.2.0-roadmap@sha256:a869ca76d39759cbd02f6f25d161d8052e872b639856915b83273cc8de54fc51",
+        "dockerproxy.net/znpt/roadmapbench-dsl-2.2.0-roadmap@sha256:a869ca76d39759cbd02f6f25d161d8052e872b639856915b83273cc8de54fc51"
+      ],
+      "repo_tags": [
+        "roadmapbench-dsl-2.2.0-roadmap:latest",
+        "znpt/roadmapbench-dsl-2.2.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-dsl-2.2.0-roadmap:latest"
+      ],
+      "size_bytes": 814179993,
+      "task": "dsl-2.2.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:f674f6647bae6b9a77d99180d0bdd1baf6be8dc4754310b7a7815865d6c6121e",
+      "local_tag": "roadmapbench-fal-2.0.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fal-2.0.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-fal-2.0.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-fal-2.0.0-roadmap@sha256:f674f6647bae6b9a77d99180d0bdd1baf6be8dc4754310b7a7815865d6c6121e",
+        "znpt/roadmapbench-fal-2.0.0-roadmap@sha256:f674f6647bae6b9a77d99180d0bdd1baf6be8dc4754310b7a7815865d6c6121e",
+        "dockerproxy.net/znpt/roadmapbench-fal-2.0.0-roadmap@sha256:f674f6647bae6b9a77d99180d0bdd1baf6be8dc4754310b7a7815865d6c6121e"
+      ],
+      "repo_tags": [
+        "roadmapbench-fal-2.0.0-roadmap:latest",
+        "znpt/roadmapbench-fal-2.0.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-fal-2.0.0-roadmap:latest"
+      ],
+      "size_bytes": 1040977108,
+      "task": "fal-2.0.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:25d85fbcc2718c7b8840f11dbc71163517fb1286294a57fde4275cbc45072669",
+      "local_tag": "roadmapbench-fbr-2.42.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fbr-2.42.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-fbr-2.42.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-fbr-2.42.0-roadmap@sha256:25d85fbcc2718c7b8840f11dbc71163517fb1286294a57fde4275cbc45072669",
+        "znpt/roadmapbench-fbr-2.42.0-roadmap@sha256:25d85fbcc2718c7b8840f11dbc71163517fb1286294a57fde4275cbc45072669",
+        "dockerproxy.net/znpt/roadmapbench-fbr-2.42.0-roadmap@sha256:25d85fbcc2718c7b8840f11dbc71163517fb1286294a57fde4275cbc45072669"
+      ],
+      "repo_tags": [
+        "roadmapbench-fbr-2.42.0-roadmap:latest",
+        "znpt/roadmapbench-fbr-2.42.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-fbr-2.42.0-roadmap:latest"
+      ],
+      "size_bytes": 564056056,
+      "task": "fbr-2.42.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:378cd6dcebf3335e07b8b1ddb6cfee187818c87106373397de55a956ba351d49",
+      "local_tag": "roadmapbench-fyn-2.1.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-fyn-2.1.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-fyn-2.1.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-fyn-2.1.0-roadmap@sha256:378cd6dcebf3335e07b8b1ddb6cfee187818c87106373397de55a956ba351d49",
+        "znpt/roadmapbench-fyn-2.1.0-roadmap@sha256:378cd6dcebf3335e07b8b1ddb6cfee187818c87106373397de55a956ba351d49",
+        "dockerproxy.net/znpt/roadmapbench-fyn-2.1.0-roadmap@sha256:378cd6dcebf3335e07b8b1ddb6cfee187818c87106373397de55a956ba351d49"
+      ],
+      "repo_tags": [
+        "roadmapbench-fyn-2.1.0-roadmap:latest",
+        "znpt/roadmapbench-fyn-2.1.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-fyn-2.1.0-roadmap:latest"
+      ],
+      "size_bytes": 887098078,
+      "task": "fyn-2.1.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:6a25c5532b14ad0f081f8ad39b40753c192a632ccf5a7312af92d74a7ab36a35",
+      "local_tag": "roadmapbench-glz-4.0.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-glz-4.0.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-glz-4.0.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-glz-4.0.0-roadmap@sha256:6a25c5532b14ad0f081f8ad39b40753c192a632ccf5a7312af92d74a7ab36a35",
+        "znpt/roadmapbench-glz-4.0.0-roadmap@sha256:6a25c5532b14ad0f081f8ad39b40753c192a632ccf5a7312af92d74a7ab36a35",
+        "dockerproxy.net/znpt/roadmapbench-glz-4.0.0-roadmap@sha256:6a25c5532b14ad0f081f8ad39b40753c192a632ccf5a7312af92d74a7ab36a35"
+      ],
+      "repo_tags": [
+        "roadmapbench-glz-4.0.0-roadmap:latest",
+        "znpt/roadmapbench-glz-4.0.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-glz-4.0.0-roadmap:latest"
+      ],
+      "size_bytes": 1370749738,
+      "task": "glz-4.0.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": false,
+      "config_digest": null,
+      "direct_pull_status": "downloaded_loaded_before_interrupted_json_write",
+      "docker_archive_sha256": null,
+      "layer_count": null,
+      "local_image_id": "sha256:69fb0f15d1883258ba5e9f87ce28fd2a74ee9c6ca73a88f7414044ef1a0a714e",
+      "local_tag": "roadmapbench-ktx-0.10.0-roadmap:latest",
+      "manifest_digest": null,
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-ktx-0.10.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-ktx-0.10.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-ktx-0.10.0-roadmap@sha256:69fb0f15d1883258ba5e9f87ce28fd2a74ee9c6ca73a88f7414044ef1a0a714e",
+        "znpt/roadmapbench-ktx-0.10.0-roadmap@sha256:69fb0f15d1883258ba5e9f87ce28fd2a74ee9c6ca73a88f7414044ef1a0a714e",
+        "dockerproxy.net/znpt/roadmapbench-ktx-0.10.0-roadmap@sha256:69fb0f15d1883258ba5e9f87ce28fd2a74ee9c6ca73a88f7414044ef1a0a714e"
+      ],
+      "repo_tags": [
+        "roadmapbench-ktx-0.10.0-roadmap:latest",
+        "znpt/roadmapbench-ktx-0.10.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-ktx-0.10.0-roadmap:latest"
+      ],
+      "size_bytes": 1540205672,
+      "task": "ktx-0.10.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": true,
+      "config_digest": "sha256:46ec85252f0c23708149052a24a82938cdae5d2db3b8272eabd9467885a27ba9",
+      "direct_pull_status": "downloaded_loaded",
+      "docker_archive_sha256": "sha256:5567bac94e0db5fcf1348f80c8099226b8eb3573ba359a582e4355b14f85eb04",
+      "layer_count": 10,
+      "local_image_id": "sha256:12f5bb1418b5b3d5f85cad500a240aea99c2b224f1cd4182a654fde6eab53b71",
+      "local_tag": "roadmapbench-mko-4.1.0-roadmap:latest",
+      "manifest_digest": "sha256:89416b06b424555f34b8d4bbc6f894ff699d4b903a0e5e5887258fdd9800639a",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-mko-4.1.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-mko-4.1.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-mko-4.1.0-roadmap@sha256:12f5bb1418b5b3d5f85cad500a240aea99c2b224f1cd4182a654fde6eab53b71",
+        "znpt/roadmapbench-mko-4.1.0-roadmap@sha256:12f5bb1418b5b3d5f85cad500a240aea99c2b224f1cd4182a654fde6eab53b71",
+        "dockerproxy.net/znpt/roadmapbench-mko-4.1.0-roadmap@sha256:12f5bb1418b5b3d5f85cad500a240aea99c2b224f1cd4182a654fde6eab53b71"
+      ],
+      "repo_tags": [
+        "roadmapbench-mko-4.1.0-roadmap:latest",
+        "znpt/roadmapbench-mko-4.1.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-mko-4.1.0-roadmap:latest"
+      ],
+      "size_bytes": 1061952446,
+      "task": "mko-4.1.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": true,
+      "config_digest": "sha256:e6188ba78c7ebe886e334d94736a14d98a0f711b2816737b374a866c8e3429c3",
+      "direct_pull_status": "downloaded_loaded",
+      "docker_archive_sha256": "sha256:e3f53ad0e1f6f0e3c21a4c20ecda041048e653d6cdbcecba65c4ecb075050d43",
+      "layer_count": 15,
+      "local_image_id": "sha256:1b34f1a83c8351f999fc4a66ec8b77f43847a0bf37fa8d390ee44d9ace3ae7e3",
+      "local_tag": "roadmapbench-opt-3.0.0-roadmap:latest",
+      "manifest_digest": "sha256:5371ee1af77a48c7e2bad937d9aeeb99c66052dbdca2022e77d7ecd0545a89d6",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-opt-3.0.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-opt-3.0.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-opt-3.0.0-roadmap@sha256:1b34f1a83c8351f999fc4a66ec8b77f43847a0bf37fa8d390ee44d9ace3ae7e3",
+        "znpt/roadmapbench-opt-3.0.0-roadmap@sha256:1b34f1a83c8351f999fc4a66ec8b77f43847a0bf37fa8d390ee44d9ace3ae7e3",
+        "dockerproxy.net/znpt/roadmapbench-opt-3.0.0-roadmap@sha256:1b34f1a83c8351f999fc4a66ec8b77f43847a0bf37fa8d390ee44d9ace3ae7e3"
+      ],
+      "repo_tags": [
+        "roadmapbench-opt-3.0.0-roadmap:latest",
+        "znpt/roadmapbench-opt-3.0.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-opt-3.0.0-roadmap:latest"
+      ],
+      "size_bytes": 828644774,
+      "task": "opt-3.0.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": true,
+      "config_digest": "sha256:1450d3adb38bceffd4f3d69999dd413910b53dacb734bfebda06684cf8060532",
+      "direct_pull_status": "downloaded_loaded",
+      "docker_archive_sha256": "sha256:831d58d736fd360a2f5b7bf61dd56e1168a0833a243d14f235fc7604160172d0",
+      "layer_count": 13,
+      "local_image_id": "sha256:6e80a84ded53f1d67369dd9846989b0752908bfdd3b37429b547aacf502c89e7",
+      "local_tag": "roadmapbench-plr-1.0.0-roadmap:latest",
+      "manifest_digest": "sha256:e6637ff5527132d8cee78477348c0e68396ed719a7a6eb04c8924019b93bb2c3",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-plr-1.0.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-plr-1.0.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-plr-1.0.0-roadmap@sha256:6e80a84ded53f1d67369dd9846989b0752908bfdd3b37429b547aacf502c89e7",
+        "znpt/roadmapbench-plr-1.0.0-roadmap@sha256:6e80a84ded53f1d67369dd9846989b0752908bfdd3b37429b547aacf502c89e7",
+        "dockerproxy.net/znpt/roadmapbench-plr-1.0.0-roadmap@sha256:6e80a84ded53f1d67369dd9846989b0752908bfdd3b37429b547aacf502c89e7"
+      ],
+      "repo_tags": [
+        "roadmapbench-plr-1.0.0-roadmap:latest",
+        "znpt/roadmapbench-plr-1.0.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-plr-1.0.0-roadmap:latest"
+      ],
+      "size_bytes": 1451276392,
+      "task": "plr-1.0.0-roadmap"
+    },
+    {
+      "complete_manifest_layer_record_available": true,
+      "config_digest": "sha256:7e2b162b60557236215d8f8930cea4733610d4783c30f40f97698565ceefdc34",
+      "direct_pull_status": "downloaded_loaded",
+      "docker_archive_sha256": "sha256:dbeb087b24e40fcde0ce9f06b9c9dfc474ea8f7b90639ba45a9abd53fcaca863",
+      "layer_count": 13,
+      "local_image_id": "sha256:5e6eb5a0d388ae7d4466317cd867f91caca54e791ae6598abe2546501dd01eef",
+      "local_tag": "roadmapbench-prm-5.0.0-roadmap:latest",
+      "manifest_digest": "sha256:61da9cbd6f20256f66cd6f294e998afa6d7a1fab2038c7fa1e3587d5a989eda4",
+      "mirror_tag": "dockerproxy.net/znpt/roadmapbench-prm-5.0.0-roadmap:latest",
+      "network_path": "registry/blob direct to dockerproxy.net with proxy disabled; docker load local only",
+      "official_tag": "znpt/roadmapbench-prm-5.0.0-roadmap:latest",
+      "repo_digests": [
+        "roadmapbench-prm-5.0.0-roadmap@sha256:5e6eb5a0d388ae7d4466317cd867f91caca54e791ae6598abe2546501dd01eef",
+        "znpt/roadmapbench-prm-5.0.0-roadmap@sha256:5e6eb5a0d388ae7d4466317cd867f91caca54e791ae6598abe2546501dd01eef",
+        "dockerproxy.net/znpt/roadmapbench-prm-5.0.0-roadmap@sha256:5e6eb5a0d388ae7d4466317cd867f91caca54e791ae6598abe2546501dd01eef"
+      ],
+      "repo_tags": [
+        "roadmapbench-prm-5.0.0-roadmap:latest",
+        "znpt/roadmapbench-prm-5.0.0-roadmap:latest",
+        "dockerproxy.net/znpt/roadmapbench-prm-5.0.0-roadmap:latest"
+      ],
+      "size_bytes": 1998593162,
+      "task": "prm-5.0.0-roadmap"
+    }
+  ]
+}

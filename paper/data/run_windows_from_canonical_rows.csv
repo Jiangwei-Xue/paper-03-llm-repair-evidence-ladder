@@ -1,0 +1,4 @@
+stratum,row_count,unique_tasks,unique_cells,min_execution_timestamp_raw,min_execution_timestamp_utc,max_execution_timestamp_raw,max_execution_timestamp_utc,date_range,all_rows_same_utc_date
+deepseek_clean,960,30,120,2026-07-07T10:19:29.455569Z,2026-07-07T10:19:29.455569Z,2026-07-07T19:35:37.038631Z,2026-07-07T19:35:37.038631Z,2026-07-07 to 2026-07-07,True
+glm_supplementary,480,30,60,2026-07-08T14:34:27.950363Z,2026-07-08T14:34:27.950363Z,2026-07-09T11:03:54.659482Z,2026-07-09T11:03:54.659482Z,2026-07-08 to 2026-07-09,False
+deepseek_extension,960,30,120,2026-07-10T06:34:40.472569Z,2026-07-10T06:34:40.472569Z,2026-07-10T10:14:53.033011Z,2026-07-10T10:14:53.033011Z,2026-07-10 to 2026-07-10,True

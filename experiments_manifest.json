@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-10T04:21:22Z",
+  "canonical_claim_rows": 2400,
+  "historical_ledger_entries": 2970,
+  "fixed_cells": 300,
+  "runs": [
+    {
+      "run_id": "roadmapbench_mainmatrix_v2_deepseek_flash_30task_v3_v4_8rep_960_20260707",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "task_pool": "primary_30",
+      "tasks": 30,
+      "arms": ["single_shot_v3", "staged_v4"],
+      "repetitions": 8,
+      "planned_claim_rows": 480,
+      "historical_ledger_entries": 568,
+      "role": "claim-bearing DeepSeek clean-pool stratum"
+    },
+    {
+      "run_id": "roadmapbench_mainmatrix_v2_deepseek_pro_30task_v3_v4_8rep_960_20260707",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "task_pool": "primary_30",
+      "tasks": 30,
+      "arms": ["single_shot_v3", "staged_v4"],
+      "repetitions": 8,
+      "planned_claim_rows": 480,
+      "historical_ledger_entries": 605,
+      "role": "claim-bearing DeepSeek clean-pool stratum"
+    },
+    {
+      "run_id": "roadmapbench_random30_extension_deepseek_flash_30task_v3_v4_8rep_20260710",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "task_pool": "extension_30",
+      "tasks": 30,
+      "arms": ["single_shot_v3", "staged_v4"],
+      "repetitions": 8,
+      "planned_claim_rows": 480,
+      "historical_ledger_entries": 597,
+      "role": "claim-bearing DeepSeek extension-pool stratum"
+    },
+    {
+      "run_id": "roadmapbench_random30_extension_deepseek_pro_30task_v3_v4_8rep_20260710",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "task_pool": "extension_30",
+      "tasks": 30,
+      "arms": ["single_shot_v3", "staged_v4"],
+      "repetitions": 8,
+      "planned_claim_rows": 480,
+      "historical_ledger_entries": 592,
+      "role": "claim-bearing DeepSeek extension-pool stratum"
+    },
+    {
+      "run_id": "roadmapbench_glm52_bailian_30task_v3_v4_8rep_480_20260708",
+      "provider": "Alibaba Bailian / DashScope-compatible API",
+      "model": "glm-5.2",
+      "task_pool": "primary_30",
+      "tasks": 30,
+      "arms": ["single_shot_v3", "staged_v4"],
+      "repetitions": 8,
+      "planned_claim_rows": 480,
+      "historical_ledger_entries": 608,
+      "role": "supplementary cross-model boundary stratum"
+    }
+  ],
+  "excluded_from_claim_estimator": [
+    "protocol-development pilots",
+    "Qwen contract-adaptation diagnostics",
+    "model-version bridge checks",
+    "controller-study development runs",
+    "intermediate retry records not selected by the E5/VCR canonicalization"
+  ]
+}

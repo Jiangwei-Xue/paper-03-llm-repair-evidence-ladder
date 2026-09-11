@@ -1,0 +1,1477 @@
+{
+  "created_at": "2026-07-10T06:13:27Z",
+  "root": "<PROJECT_ROOT>/roadmap_swe_evo_probe/data/roadmapbench_random30_extension_seeded_20260710",
+  "schema_version": 1,
+  "tasks": [
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 481,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 467,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 467,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 14,
+      "support_expected_files": 14,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "fbr-2.27.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 1696,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 1683,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 1683,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "fyn-2.5.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 375,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 365,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 365,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "glz-5.6.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 405,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 392,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 392,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "glz-6.1.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 413,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 400,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 400,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "glz-6.2.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 522,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 512,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 512,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "glz-7.0.1-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 729,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 719,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 719,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ktx-0.12.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 811,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 795,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 795,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 16,
+      "support_expected_files": 16,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ktx-0.13.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 816,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 805,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 805,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ktx-0.15.1-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 593,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 580,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 580,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ktx-0.6.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 632,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 619,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 619,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ktx-0.9.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 1400,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 1387,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 1387,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 13,
+      "support_expected_files": 13,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "mko-5.0.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 2305,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 2294,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 2294,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "mko-6.5.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 2610,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 2592,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 2592,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 18,
+      "support_expected_files": 18,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "mko-7.0.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 469,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 458,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 458,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "opt-4.0.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 479,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 467,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 467,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 12,
+      "support_expected_files": 12,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "opt-4.4.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 480,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 471,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 471,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 9,
+      "support_expected_files": 9,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "opt-4.5.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 485,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 474,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 474,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "opt-4.6.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 2748,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 2738,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 2738,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "plr-1.10.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 2789,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 2778,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 2778,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "plr-1.22.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 3246,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 3236,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 3236,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "prm-5.15.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 4325,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 4315,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 4315,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 10,
+      "support_expected_files": 10,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "prm-6.16.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 961,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 949,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 949,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 12,
+      "support_expected_files": 12,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "pyg-2.2.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 1235,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 1224,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 1224,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "pyg-2.4.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 1466,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 1455,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 1455,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 11,
+      "support_expected_files": 11,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "pyg-2.7.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 213,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 206,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 206,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 7,
+      "support_expected_files": 7,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "rat-0.27.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 5183,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 5176,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 5176,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 7,
+      "support_expected_files": 7,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ruf-0.2.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 5221,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 5215,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 5215,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 6,
+      "support_expected_files": 6,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "ruf-0.3.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 2951,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 2944,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 2944,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 7,
+      "support_expected_files": 7,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "slt-1.14.0-roadmap",
+      "task_dir_exists": true
+    },
+    {
+      "claim_bearing_artifact_ok": true,
+      "manifest_file_count": 1631,
+      "repo_exact_manifest_ok": true,
+      "repo_expected_files": 1619,
+      "repo_extra_count": 0,
+      "repo_extra_sample": [],
+      "repo_hash_failed_count": 0,
+      "repo_hash_failed_sample": [],
+      "repo_local_files": 1619,
+      "repo_missing_count": 0,
+      "repo_missing_sample": [],
+      "required_files": [
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "instruction.md"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "task.toml"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "environment/Dockerfile"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "tests/test.sh"
+        },
+        {
+          "exists": true,
+          "in_manifest": true,
+          "path": "solution/changes.patch"
+        }
+      ],
+      "required_ok": true,
+      "runnable_preflight_ok": true,
+      "support_checked_files": 12,
+      "support_expected_files": 12,
+      "support_failed_count": 0,
+      "support_failed_sample": [],
+      "support_ok": true,
+      "task": "spc-3.4.0-roadmap",
+      "task_dir_exists": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{RQ1: The raw action field contains twelve invariant conflicts}
+
+The DeepSeek raw action fields agree with the harmonized construct for all rows. The GLM stratum contains \ContradictionRows{} conflicts. Each disputed row has $\widetilde A_i=1$ and $E_i=1$, while the retained patch-application check has $G_i=0$ and the failure record identifies patch application as the stopping step. All twelve rows belong to \code{fal-1.3.0-roadmap} and span both protocol arms.
+
+The historical field therefore records 98 positive GLM actions; the harmonized construct records 86. \Cref{tab:construct-audit} shows how the change propagates through the support units. Two cells and one task lose their positive status. The set of positive task families remains unchanged because other tasks in the same family retain supported actions.
+
+\input{tables/table_construct_audit}
+
+The available artifacts identify the invariant conflict but do not reconstruct the legacy mechanism that produced it. The audit preserves the raw field, records the conflict, and derives $A_i$ through \Cref{eq:harmonized-action}. This establishes the field-to-construct mapping used in the remaining analyses.
+
+\subsection{RQ2: Governed action has low conditional endpoint yield}
+
+\Cref{tab:criterion} reports the complete execution-level relation between governed action and verifier pass. No stratum contains a pass with $A_i=0$. This confirms the expected pipeline ordering for the observed passes. The dominant off-diagonal cell is $A_i=1,P_i=0$: 185 rows in the clean stratum, 190 in the extension stratum, and 86 in the GLM boundary stratum.
+
+The clean stratum contains \CleanActions{} governed actions and \CleanPasses{} passes. Its conditional endpoint yield is \CleanYield\%. The extension stratum contains \ExtensionActions{} governed actions and \ExtensionPasses{} passes, for a yield of \ExtensionYield\%. The GLM boundary contains \GLMActions{} harmonized actions and no pass. Execution-level action prevalence is \CleanActionRate\%, \ExtensionActionRate\%, and \GLMActionRate\%; pass prevalence is \CleanPassRate\%, \ExtensionPassRate\%, and \GLMPassRate\%.
+
+\input{tables/table_criterion}
+
+The route-by-arm table in \Cref{tab:stratified} shows the same ordering in every retained block: governed-action prevalence exceeds pass prevalence. The size of the gap varies across the historical conditions, which is consistent with the claim index: route, arm, and task surface remain part of $\Pi$ even when the same construct labels are used.
+
+The result gives governed action a precise role. It is a successful screen for allowed, applicable source activity under the frozen protocol. In these strata, most rows that clear that screen remain below the verifier endpoint.
+
+\subsection{RQ3a: Opportunity amplifies action discovery more than pass discovery}
+
+\Cref{tab:opportunity} reports observed-opportunity discovery at $k\in\{1,2,4,8\}$. At $k=1$, the values equal execution prevalence. At $k=8$, they equal the fraction of fixed cells with at least one retained positive.
+
+In the clean stratum, governed-action discovery rises from \CleanActionDiscoveryKOne\% at $k=1$ to \CleanActionDiscoveryKEight\% at $k=8$. Verifier-pass discovery rises from \CleanPassDiscoveryKOne\% to \CleanPassDiscoveryKEight\%. In the extension stratum, action discovery rises from \ExtensionActionDiscoveryKOne\% to \ExtensionActionDiscoveryKEight\%, while pass discovery moves from \ExtensionPassDiscoveryKOne\% to \ExtensionPassDiscoveryKEight\%. The GLM boundary reaches \GLMActionDiscoveryKEight\% action discovery and remains at zero pass discovery.
+
+\input{tables/table_opportunity}
+
+The opportunity transformation does not change the meaning of either signal. It changes the chance that a fixed cell exposes at least one retained positive under a stated budget. The observed curves therefore answer a matched question for $A$ and $P$. Across all three strata, additional opportunities expose governed actions over a much larger share of cells than verifier passes.
+
+The extension pass curve reaches its $k=8$ endpoint by $k=2$: both positive cells contain enough passing rows that every size-two subset has at least one pass. The flat section reflects concentration within two cells, not broad saturation over the task surface. This link between opportunity and support becomes visible only when the two analyses are reported together.
+
+\subsection{RQ3b: Endpoint evidence contracts sharply across support units}
+
+\Cref{tab:support} gives the support profile for each signal. Governed actions occupy 49 of 120 clean cells, 21 of 30 clean tasks, and 11 of 14 clean families. The 14 clean passes occupy five cells, two tasks, and one family. In the extension stratum, governed actions occupy 56 cells, 26 tasks, and 12 of 13 families. Its 14 passes occupy two cells, one task, and one family. The GLM actions span all 14 retained task families but yield no endpoint support.
+
+\input{tables/table_support}
+
+Across the two task-ID-disjoint DeepSeek strata, the audit inventory contains 403 action rows supported by 105 cells, 47 tasks, and 16 distinct family identifiers. The 28 passing rows are supported by seven cells, three tasks, and two families. These totals summarize the breadth of the retained evidence; rates remain stratum-specific.
+
+Concentration is also strong within the positive tasks. In the clean stratum, \code{tpl-3.2.0-roadmap} contributes 13 of 14 passes and \code{tpl-3.3.0-roadmap} contributes one. In the extension stratum, \code{prm-5.15.0-roadmap} contributes all 14 passes. \Cref{tab:positive-tasks} reports the corresponding action counts. Removing the sole pass-support family from either pool removes all passes in that pool; removing any other family leaves the pass numerator unchanged.
+
+The support profiles change the interpretation of the row totals. Twenty-eight passing executions show that the frozen protocol produced accepted candidates. Seven positive cells show how many repeated conditions generated them. Three tasks and two families describe the breadth of that endpoint evidence over the retained task surface.
+
+\subsection{RQ4: The verifier separates the executed controls}
+
+All \VerifierReachedControls{} verifier-reached controls produce their expected outcome (\Cref{tab:controls}). The exact reference patch passes in all six runs. The unrepaired no-op state fails in all six. All nine reference-derived mutants are rejected. The retained replays contain no disagreement.
+
+\input{tables/table_controls}
+
+The twelve earlier host-mount events stop before verifier entry and remain outside the endpoint denominator. Their separate accounting keeps infrastructure delivery and behavioral evaluation distinct.
+
+The executed controls cover two tasks and two task families. Within that surface, the verifier distinguishes known-good, unrepaired, and selected near-reference candidates under clean replay. This result supports the frozen pass criterion used in \Cref{eq:yield}; it leaves semantic adequacy beyond the tested controls unmeasured.

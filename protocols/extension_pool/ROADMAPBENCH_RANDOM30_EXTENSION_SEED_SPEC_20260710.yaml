@@ -1,0 +1,54 @@
+schema_version: roadmapbench_random30_extension_seed_spec_v1_20260710
+created_utc: 2026-07-10T00:00:00Z
+protocol: Artifact_Chain/ROADMAPBENCH_RANDOM30_EXTENSION_PROTOCOL_20260710.md
+
+candidate_universe:
+  tree_json: roadmap_swe_evo_probe/data/roadmapbench_min/.cache/huggingface/trees/59184e779909300a5a0150b06b945d39da81a099.json
+  expected_task_count: 115
+  task_id_rule: top_level_directory_ending_with_-roadmap
+
+exclusion_source:
+  freeze_spec: Artifact_Chain/VARIABLE_FREEZE_SPEC_MAIN_MATRIX_V2_20260707.yaml
+  excluded_task_count: 30
+
+sampling:
+  seed: 20260710
+  rng: python3_random_Random
+  pre_shuffle_order: sorted_lexicographically
+  output: full_seeded_priority_list
+  initial_target_count: 30
+  reserve_queue: same_seeded_order_after_first_30
+
+source_policy:
+  source_order:
+    - official_direct_no_proxy_probe
+    - docker.1ms.run
+    - dockerproxy.net
+  docker_daemon_network_pull: false
+  image_import_method: direct_registry_client_plus_local_docker_load
+  retry_budget:
+    official_direct_full_pull_attempts: 1
+    mirror_full_pull_attempts_per_source: 3
+
+replacement_policy:
+  allowed_failure_reasons:
+    - pull_failure_after_retry_budget
+    - missing_support_files
+    - digest_mismatch
+    - file_integrity_failure
+    - docker_image_unavailability
+    - gold_oracle_sanity_failure
+    - verifier_non_viability
+  disallowed_failure_reasons:
+    - model_output_quality
+    - semantic_difficulty
+    - reward
+    - answer_success
+  replacement_rule: next_task_from_seeded_reserve_queue_only
+
+final_pool:
+  target_size: 30
+  root: roadmap_swe_evo_probe/data/roadmapbench_random30_extension_seeded_20260710
+
+future_run_boundary:
+  no_claim_bearing_model_calls_before_final_freeze: true

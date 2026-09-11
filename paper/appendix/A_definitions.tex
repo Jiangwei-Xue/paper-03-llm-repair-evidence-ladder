@@ -1,0 +1,29 @@
+\section{Operational Definitions and Claim Index Examples}
+\label{app:definitions}
+
+\input{tables/table_definitions}
+
+\subsection{Positive-event coding}
+
+The canonical source contains historical fields with different missingness patterns. The claim-bearing indicators in \Cref{tab:definitions} use a positive-event rule: a value contributes one only when the required retained fields are explicitly positive. Every planned row remains in the denominator. This coding answers how often a positive construct was observed under the planned execution budget. It does not classify every nonpositive row as an explicit behavioral failure.
+
+For $A_i$, the retained harmonized field is complete over the 2,400 rows. The twelve GLM conflicts have $\widetilde A_i=1$, $E_i=1$, and $G_i=0$, so \Cref{eq:harmonized-action} assigns $A_i=0$. The reconciliation table retains the raw field and records the source path and reason for each derived value.
+
+\subsection{Examples of indexed estimates}
+
+The following examples show how the same corpus yields distinct, well-specified results:
+\begin{align*}
+\claimindex(204/960)
+&=\langle \text{governed action},\;1,\;\text{row},\;\text{applicable-action claim},\;\text{extension}\rangle,\\
+\claimindex(56/120)
+&=\langle \text{governed action},\;k{=}8\text{ any-positive},\;\text{cell},\;\text{applicable-action claim},\;\text{extension}\rangle,\\
+\claimindex(14/960)
+&=\langle \text{verifier pass},\;1,\;\text{row},\;\text{frozen-pass claim},\;\text{extension}\rangle,\\
+\claimindex(1/30)
+&=\langle \text{verifier pass},\;\text{all retained rows},\;\text{task},\;\text{frozen-pass claim},\;\text{extension}\rangle.
+\end{align*}
+The first two differ in opportunity and unit. The first and third differ in construct. The third and fourth summarize the same endpoint at different support units.
+
+\subsection{Broader event vocabulary}
+
+The historical project also records structured-state validity, deterministic edit application, verifier entry, partial reward, and infrastructure states where available. These events remain useful for row-level diagnosis. Their coverage is uneven across the three historical strata, so the paper does not construct a cross-stratum funnel from them. The retained row table preserves the available fields for future task-local analyses.

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-10T04:21:22Z",
+  "canonical_surface": {
+    "row_file": "paper/data/row_level_claim_view.csv",
+    "original_row_file": "paper/data/row_level_master_original.csv",
+    "rows": 2400,
+    "fixed_cells": 300,
+    "harmonized_governed_actions": 489,
+    "verifier_passes": 28
+  },
+  "strata": [
+    {
+      "stratum": "deepseek_clean",
+      "rows": 960,
+      "task_pool": "primary_30",
+      "models": ["deepseek-v4-flash", "deepseek-v4-pro"]
+    },
+    {
+      "stratum": "deepseek_extension",
+      "rows": 960,
+      "task_pool": "extension_30",
+      "models": ["deepseek-v4-flash", "deepseek-v4-pro"]
+    },
+    {
+      "stratum": "glm_supplementary",
+      "rows": 480,
+      "task_pool": "primary_30",
+      "models": ["glm-5.2"]
+    }
+  ],
+  "derived_outputs": [
+    "paper/data/protocol_stratified_summary.csv",
+    "paper/data/repeated_opportunity_k1_k8.csv",
+    "paper/data/action_pass_crosstab_by_stratum.csv",
+    "paper/data/task_support_summary.csv",
+    "paper/data/pass_concentration_by_task.csv",
+    "paper/data/family_cluster_bootstrap.csv",
+    "paper/data/leave_one_family_out.csv",
+    "paper/data/pool_overlap_audit.csv",
+    "paper/data/endpoint_control_runs.csv"
+  ],
+  "integrity_surfaces": {
+    "e5_vcr": "evidence/03_E5_VCR/",
+    "claim_map": "paper/CLAIM_EVIDENCE_MAP.md",
+    "docker_roster": "docker/IMAGE_ROSTER.jsonl",
+        "docker_configurations": "docker/IMAGE_CONFIGURATIONS.jsonl",
+        "frozen_protocols": "protocols/",
+        "prompt_visibility_audits": "prompt_audits/",
+        "experiment_harness": "experiment_code/",
+        "release_manifest": "RELEASE_METADATA/RELEASE_MANIFEST.jsonl"
+  },
+  "interpretation_boundary": "Counts are operational outcomes on frozen task pools, not benchmark-wide capability estimates or claims of absolute semantic correctness."
+}

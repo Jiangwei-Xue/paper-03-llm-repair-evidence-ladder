@@ -1,0 +1,24 @@
+
+\begin{table}[H]
+\centering
+\caption{Descriptive route-by-arm summaries. The historical routes and prompt arms define measurement strata; the table is not a causal comparison of methods.}
+\label{tab:stratified}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lllrrrr@{}}
+\toprule
+Pool & Route & Arm & Rows & Actions & Passes & Yield \\
+\midrule
+DeepSeek clean & flash & single-shot & 240 & 51 (21.25\%) & 4 (1.67\%) & 7.84\% \\
+DeepSeek clean & flash & staged & 240 & 34 (14.17\%) & 3 (1.25\%) & 8.82\% \\
+DeepSeek clean & pro & single-shot & 240 & 56 (23.33\%) & 2 (0.83\%) & 3.57\% \\
+DeepSeek clean & pro & staged & 240 & 58 (24.17\%) & 5 (2.08\%) & 8.62\% \\
+DeepSeek extension & flash & single-shot & 240 & 60 (25.00\%) & 7 (2.92\%) & 11.67\% \\
+DeepSeek extension & flash & staged & 240 & 41 (17.08\%) & 0 (0.00\%) & 0.00\% \\
+DeepSeek extension & pro & single-shot & 240 & 61 (25.42\%) & 7 (2.92\%) & 11.48\% \\
+DeepSeek extension & pro & staged & 240 & 42 (17.50\%) & 0 (0.00\%) & 0.00\% \\
+GLM boundary & glm-5.2 & single-shot & 240 & 40 (16.67\%) & 0 (0.00\%) & 0.00\% \\
+GLM boundary & glm-5.2 & staged & 240 & 46 (19.17\%) & 0 (0.00\%) & 0.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
